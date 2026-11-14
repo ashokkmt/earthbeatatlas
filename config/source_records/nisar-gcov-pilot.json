@@ -1,0 +1,86 @@
+[
+  {
+    "region": "Santa Rosa",
+    "stack_id": "114_D_071",
+    "date": "2026-05-05",
+    "concept_id": "G4275207669-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001"
+  },
+  {
+    "region": "Santa Rosa",
+    "stack_id": "114_D_071",
+    "date": "2026-05-17",
+    "concept_id": "G4275223942-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_020_114_D_071_4005_DHDH_A_20260517T024858_20260517T024933_P05023_N_F_J_001"
+  },
+  {
+    "region": "Santa Rosa",
+    "stack_id": "114_D_071",
+    "date": "2026-05-29",
+    "concept_id": "G4275289271-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001"
+  },
+  {
+    "region": "Santa Rosa",
+    "stack_id": "114_D_071",
+    "date": "2026-06-10",
+    "concept_id": "G4275286666-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001"
+  },
+  {
+    "region": "Barataria",
+    "stack_id": "105_A_017",
+    "date": "2026-06-21",
+    "concept_id": "G4244635949-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001"
+  },
+  {
+    "region": "Barataria",
+    "stack_id": "105_A_017",
+    "date": "2026-07-15",
+    "concept_id": "G4257458916-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001"
+  },
+  {
+    "region": "Barataria",
+    "stack_id": "105_A_017",
+    "date": "2026-08-20",
+    "concept_id": "G4287116992-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001"
+  },
+  {
+    "region": "Barataria",
+    "stack_id": "105_A_017",
+    "date": "2026-09-25",
+    "concept_id": "G4325824323-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001"
+  },
+  {
+    "region": "Colusa",
+    "stack_id": "034_A_021",
+    "date": "2026-06-04",
+    "concept_id": "G4275305452-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001"
+  },
+  {
+    "region": "Colusa",
+    "stack_id": "034_A_021",
+    "date": "2026-07-22",
+    "concept_id": "G4260071943-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001"
+  },
+  {
+    "region": "Colusa",
+    "stack_id": "034_A_021",
+    "date": "2026-08-27",
+    "concept_id": "G4291604586-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001"
+  },
+  {
+    "region": "Colusa",
+    "stack_id": "034_A_021",
+    "date": "2026-10-14",
+    "concept_id": "G4370164371-ASF",
+    "granule_ur": "NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001"
+  }
+]

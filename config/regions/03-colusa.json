@@ -1,0 +1,28 @@
+{
+  "name": "Colusa",
+  "slug": "colusa",
+  "full_name": "Sacramento Valley near Colusa, California",
+  "title": "Sacramento Valley rice fields",
+  "bounds_wgs84": [
+    -121.97,
+    39.08,
+    -121.8,
+    39.2
+  ],
+  "analysis_epsg": 32610,
+  "aliases": [
+    "Colusa",
+    "Sacramento Valley",
+    "California rice"
+  ],
+  "context_layers": [
+    {
+      "filename": "colusa-cdl-2025.tif",
+      "display_filename": "cdl-2025-rice.png",
+      "label": "2025 CDL rice reference",
+      "source": "https://pdi.scinet.usda.gov/image/rest/services/CDL_WM/ImageServer",
+      "year": 2025,
+      "class": 3
+    }
+  ]
+}

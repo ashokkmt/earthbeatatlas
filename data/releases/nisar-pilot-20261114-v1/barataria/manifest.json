@@ -1,0 +1,2209 @@
+{
+  "release_id": "nisar-pilot-20261114-v1",
+  "region_id": "barataria",
+  "region": "Barataria Basin near Lake Salvador, Louisiana",
+  "aliases": [
+    "Barataria Basin",
+    "Lake Salvador",
+    "Louisiana wetlands"
+  ],
+  "bounds_wgs84": [
+    -90.42,
+    29.7,
+    -90.24,
+    29.82
+  ],
+  "crs": "EPSG:32615",
+  "transform": [
+    30.0,
+    0.0,
+    749310.0,
+    0.0,
+    -30.0,
+    3302040.0
+  ],
+  "width": 591,
+  "height": 457,
+  "display_crs": "EPSG:3857",
+  "display_width": 600,
+  "display_height": 472,
+  "display_corners_wgs84": [
+    [
+      -90.42323542672956,
+      29.82367410768183
+    ],
+    [
+      -90.23682970617531,
+      29.82367410768183
+    ],
+    [
+      -90.23682970617531,
+      29.69637493311838
+    ],
+    [
+      -90.42323542672956,
+      29.69637493311838
+    ]
+  ],
+  "cell_size_m": 30,
+  "dates": [
+    "2026-06-21",
+    "2026-07-15",
+    "2026-08-20",
+    "2026-09-25"
+  ],
+  "withheld_dates": {},
+  "display_scales_db": {
+    "HH": [
+      -18.433653280874744,
+      -3.845699201496991
+    ],
+    "HV": [
+      -24.73501354423471,
+      -11.694693298248882
+    ]
+  },
+  "difference_display_scale_db": [
+    -6.0,
+    6.0
+  ],
+  "difference_sign_convention": "later date minus earlier date",
+  "missing_pixels": "transparent",
+  "analysis_grid_encoding": {
+    "format": "raw-binary",
+    "dtype": "float32",
+    "byte_order": "little-endian",
+    "units": "dB",
+    "nodata": "NaN",
+    "row_order": "north-to-south",
+    "column_order": "west-to-east"
+  },
+  "observations": [
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-06-21",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-06-21",
+      "granule_id": "G4244635949-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260621T111906",
+      "acquisition_end_utc": "20260621T111941",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4244635949-ASF",
+      "source_checksums": {
+        "463550547_NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "f3f9199718e2fda6db85c81d0d361254a60e9b9f11d3b030463396f27dde6df1",
+        "463551050_NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-06-21-hh.png",
+        "values_f32": "barataria/2026-06-21-hh.f32"
+      },
+      "checksums": {
+        "map_png": "248735726dd356b3a8ff2e2a1e4d1aad420d49916f9a2c808168c36b7df0b882",
+        "values_f32": "2489335c154698a07768298227fd7ff4e6fe994e6032c5e6a372cc7892882c4e"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-07-15",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-07-15",
+      "granule_id": "G4257458916-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260715T111905",
+      "acquisition_end_utc": "20260715T111940",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4257458916-ASF",
+      "source_checksums": {
+        "463551424_NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "5483a30cca526b9ba76c594cfa6e580442ec223952b2f809fe208a11ad05e5e5",
+        "463551866_NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-07-15-hh.png",
+        "values_f32": "barataria/2026-07-15-hh.f32"
+      },
+      "checksums": {
+        "map_png": "558ed0a72ce28df0e3a21e9b63a1eb321b7a7d20b053578c4d9f25b703076ecf",
+        "values_f32": "8e076d433ccdb75b52bb73a6636f6961b7ab762a1d765ec0ebeafbe898fa04f8"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-08-20",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-08-20",
+      "granule_id": "G4287116992-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260820T111903",
+      "acquisition_end_utc": "20260820T111938",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4287116992-ASF",
+      "source_checksums": {
+        "463552291_NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "0827e752ad8f168c664a7aaae0d8f2bce9a67bd669135cb8980fe4887deba1ac",
+        "463552944_NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-08-20-hh.png",
+        "values_f32": "barataria/2026-08-20-hh.f32"
+      },
+      "checksums": {
+        "map_png": "e34a7e8a7dc141875c91e2a781201a29c16ec7aa40a7af0a7f7d6e91e339b3e3",
+        "values_f32": "e9308cfa49902f36273f1a023723657f119121b66f3a3fc15e3fc1283d029b5d"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-09-25",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-09-25",
+      "granule_id": "G4325824323-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260925T111903",
+      "acquisition_end_utc": "20260925T111937",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4325824323-ASF",
+      "source_checksums": {
+        "463552960_NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "26d015f91362eea77eb40f2f4a8abe23c3f5312b7976655ca0afb3524b54f81a",
+        "463553798_NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-09-25-hh.png",
+        "values_f32": "barataria/2026-09-25-hh.f32"
+      },
+      "checksums": {
+        "map_png": "ea12156652304daa6d7dadfaef4876eafef5f5ee6ede726db087e3b7a908b8fa",
+        "values_f32": "867e218b1c7786ecde1f1b3f7f76263cbd3f78ea804a1886f2a16d84557d25d6"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-06-21",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-06-21",
+      "granule_id": "G4244635949-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260621T111906",
+      "acquisition_end_utc": "20260621T111941",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4244635949-ASF",
+      "source_checksums": {
+        "463550610_NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "3977f292b2fae42e52fe7d039347811cae6aae829e4ad7812bcab31e1c29c8b4",
+        "463551050_NISAR_L2_PR_GCOV_023_105_A_017_4005_DHDH_A_20260621T111906_20260621T111941_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-06-21-hv.png",
+        "values_f32": "barataria/2026-06-21-hv.f32"
+      },
+      "checksums": {
+        "map_png": "30294c9bdceef6565f5a4839680cd2df14a39e1af90a8b646269c814909e02c0",
+        "values_f32": "c9adac4c525317a42c81db0594b03e6519569edb5826523df3b1e9a4fbdd7d64"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-07-15",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-07-15",
+      "granule_id": "G4257458916-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260715T111905",
+      "acquisition_end_utc": "20260715T111940",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4257458916-ASF",
+      "source_checksums": {
+        "463551557_NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "d6af2895faafd35db1337d72364e1fe2209aa26dceb73c0a9baeb55de2067c1c",
+        "463551866_NISAR_L2_PR_GCOV_025_105_A_017_4005_DHDH_A_20260715T111905_20260715T111940_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-07-15-hv.png",
+        "values_f32": "barataria/2026-07-15-hv.f32"
+      },
+      "checksums": {
+        "map_png": "9169266a357a65be9345aaf74c9721f3235fb57206980f5e01294ed6948d2b16",
+        "values_f32": "4af4a8b46b0806deeb30ad4065e4876f16f0e08258202d0e4b42c44528fdc504"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-08-20",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-08-20",
+      "granule_id": "G4287116992-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260820T111903",
+      "acquisition_end_utc": "20260820T111938",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4287116992-ASF",
+      "source_checksums": {
+        "463552914_NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "d3190656891f8f9e3154b5ad96639d28acf74dac888b2a6510ff3aabfb85161c",
+        "463552944_NISAR_L2_PR_GCOV_028_105_A_017_4005_DHDH_A_20260820T111903_20260820T111938_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-08-20-hv.png",
+        "values_f32": "barataria/2026-08-20-hv.f32"
+      },
+      "checksums": {
+        "map_png": "699af1363f44c89e06deeaea5633bb02b85b9988498bba52c73338b35757f099",
+        "values_f32": "28945c37bfb40048e2f9389ba18559b413c5363c6245015ecfb71e08dd3d380b"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-09-25",
+      "region_id": "barataria",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-09-25",
+      "granule_id": "G4325824323-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260925T111903",
+      "acquisition_end_utc": "20260925T111937",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4325824323-ASF",
+      "source_checksums": {
+        "463553501_NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "da2142e2e03c6ae665ec564a1fe3f23f379ad3e35e2566c7695139a383a9445f",
+        "463553798_NISAR_L2_PR_GCOV_031_105_A_017_4005_DHDH_A_20260925T111903_20260925T111937_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "157c76ffcb7e9ad4a71b567132ea77408839adc9a29e76b7097993a7a8feb929"
+      },
+      "assets": {
+        "map_png": "barataria/2026-09-25-hv.png",
+        "values_f32": "barataria/2026-09-25-hv.f32"
+      },
+      "checksums": {
+        "map_png": "9010805f571aacc73a98090f96d1b942438df4ec99793d5d48eeb16b0435494f",
+        "values_f32": "99ed0eb99a0d8a575b60fef75c9260a607700fc6d8a24a48be8a3575f8324948"
+      },
+      "valid_cells": 256833,
+      "coverage": 0.9972896466833119
+    }
+  ],
+  "pairs": [
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-06-21",
+      "later_date": "2026-07-15",
+      "units": "dB",
+      "map_png": "barataria/2026-06-21-2026-07-15-hh-difference.png",
+      "map_sha256": "8c1e984a0349ff064b0de4ebb8ce7c487864cd95c83c1ce442db80837a9a4fbb",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.898458378105147,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 8220,
+                "km2": 7.398,
+                "percent": 3.2005232972398407
+              },
+              "decrease": {
+                "cells": 58153,
+                "km2": 52.3377,
+                "percent": 22.642339574743122
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 2386,
+                "km2": 2.1473999999999998,
+                "percent": 0.9290083439433406
+              },
+              "decrease": {
+                "cells": 21447,
+                "km2": 19.3023,
+                "percent": 8.350562427725409
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 757,
+                "km2": 0.6813,
+                "percent": 0.2947440554757372
+              },
+              "decrease": {
+                "cells": 6593,
+                "km2": 5.9337,
+                "percent": 2.5670377249029523
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -0.8217441500649167,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 6104,
+                "km2": 5.4936,
+                "percent": 4.0872627927843475
+              },
+              "decrease": {
+                "cells": 34681,
+                "km2": 31.212899999999998,
+                "percent": 23.222536192095994
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1605,
+                "km2": 1.4445,
+                "percent": 1.0747144138956222
+              },
+              "decrease": {
+                "cells": 14681,
+                "km2": 13.2129,
+                "percent": 9.830456268163008
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 389,
+                "km2": 0.35009999999999997,
+                "percent": 0.2604759545204966
+              },
+              "decrease": {
+                "cells": 5088,
+                "km2": 4.5792,
+                "percent": 3.4069451326485516
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -1.1162059145864331,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 130,
+                "km2": 0.11699999999999999,
+                "percent": 0.9677659495272836
+              },
+              "decrease": {
+                "cells": 3402,
+                "km2": 3.0618,
+                "percent": 25.32569046378322
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 34,
+                "km2": 0.0306,
+                "percent": 0.2531080175686742
+              },
+              "decrease": {
+                "cells": 1144,
+                "km2": 1.0296,
+                "percent": 8.516340355840095
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 15,
+                "km2": 0.0135,
+                "percent": 0.11166530186853271
+              },
+              "decrease": {
+                "cells": 310,
+                "km2": 0.27899999999999997,
+                "percent": 2.3077495719496763
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-06-21",
+      "later_date": "2026-08-20",
+      "units": "dB",
+      "map_png": "barataria/2026-06-21-2026-08-20-hh-difference.png",
+      "map_sha256": "037c5fd9f691a9d82b3c6644d26529f861d69f366a6d85fd99611acc8918820a",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -2.136309368925202,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 4612,
+                "km2": 4.1508,
+                "percent": 1.795719397429458
+              },
+              "decrease": {
+                "cells": 136436,
+                "km2": 122.7924,
+                "percent": 53.12245700513563
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 2553,
+                "km2": 2.2977,
+                "percent": 0.9940311408580673
+              },
+              "decrease": {
+                "cells": 80253,
+                "km2": 72.2277,
+                "percent": 31.24715281914707
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1532,
+                "km2": 1.3788,
+                "percent": 0.5964965561279119
+              },
+              "decrease": {
+                "cells": 38323,
+                "km2": 34.4907,
+                "percent": 14.921369138701024
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -2.6947792467397496,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 1978,
+                "km2": 1.7802,
+                "percent": 1.3244767044769723
+              },
+              "decrease": {
+                "cells": 97620,
+                "km2": 87.858,
+                "percent": 65.3667421087169
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1018,
+                "km2": 0.9162,
+                "percent": 0.681656868128189
+              },
+              "decrease": {
+                "cells": 64302,
+                "km2": 57.8718,
+                "percent": 43.05687616343695
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 540,
+                "km2": 0.486,
+                "percent": 0.36158615794619064
+              },
+              "decrease": {
+                "cells": 33230,
+                "km2": 29.907,
+                "percent": 22.250940793614657
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -2.0018287479308112,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 139,
+                "km2": 0.1251,
+                "percent": 1.0347651306484031
+              },
+              "decrease": {
+                "cells": 6722,
+                "km2": 6.049799999999999,
+                "percent": 50.04094394401846
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 41,
+                "km2": 0.0369,
+                "percent": 0.3052184917739894
+              },
+              "decrease": {
+                "cells": 3758,
+                "km2": 3.3822,
+                "percent": 27.975880294796397
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 18,
+                "km2": 0.0162,
+                "percent": 0.13399836224223927
+              },
+              "decrease": {
+                "cells": 1641,
+                "km2": 1.4768999999999999,
+                "percent": 12.21618402441748
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-06-21",
+      "later_date": "2026-09-25",
+      "units": "dB",
+      "map_png": "barataria/2026-06-21-2026-09-25-hh-difference.png",
+      "map_sha256": "5fa244d58634140be304222dc154e5d1277b47f0aa7063da2cfeb8c2a4b7f323",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -1.3620185921535501,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 7331,
+                "km2": 6.5979,
+                "percent": 2.8543839771368944
+              },
+              "decrease": {
+                "cells": 91746,
+                "km2": 82.5714,
+                "percent": 35.722045064302485
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 3290,
+                "km2": 2.961,
+                "percent": 1.2809880350266516
+              },
+              "decrease": {
+                "cells": 45668,
+                "km2": 41.1012,
+                "percent": 17.781204128752925
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1900,
+                "km2": 1.71,
+                "percent": 0.7397803241795252
+              },
+              "decrease": {
+                "cells": 17544,
+                "km2": 15.7896,
+                "percent": 6.830897898634522
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -1.9996912088384255,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 2511,
+                "km2": 2.2599,
+                "percent": 1.6813756344497863
+              },
+              "decrease": {
+                "cells": 74660,
+                "km2": 67.194,
+                "percent": 49.99263435604184
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1145,
+                "km2": 1.0305,
+                "percent": 0.7666965756451635
+              },
+              "decrease": {
+                "cells": 40032,
+                "km2": 36.0288,
+                "percent": 26.805587175744265
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 603,
+                "km2": 0.5427,
+                "percent": 0.40377120970657954
+              },
+              "decrease": {
+                "cells": 15878,
+                "km2": 14.2902,
+                "percent": 10.631972251610398
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -1.364979291684068,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 242,
+                "km2": 0.2178,
+                "percent": 1.8015335368123278
+              },
+              "decrease": {
+                "cells": 4641,
+                "km2": 4.1769,
+                "percent": 34.549244398124024
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 87,
+                "km2": 0.0783,
+                "percent": 0.6476587508374898
+              },
+              "decrease": {
+                "cells": 2096,
+                "km2": 1.8863999999999999,
+                "percent": 15.603364847762972
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 28,
+                "km2": 0.0252,
+                "percent": 0.20844189682126107
+              },
+              "decrease": {
+                "cells": 704,
+                "km2": 0.6335999999999999,
+                "percent": 5.240824834363136
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-07-15",
+      "later_date": "2026-08-20",
+      "units": "dB",
+      "map_png": "barataria/2026-07-15-2026-08-20-hh-difference.png",
+      "map_sha256": "e567a2e41fdb4aacf732deda7916a024ff9433283208f16ae43b137e69a195b5",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -1.1502559858290304,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 6413,
+                "km2": 5.7717,
+                "percent": 2.4969532731385766
+              },
+              "decrease": {
+                "cells": 78267,
+                "km2": 70.4403,
+                "percent": 30.47388770134679
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 2207,
+                "km2": 1.9863,
+                "percent": 0.8593132502443221
+              },
+              "decrease": {
+                "cells": 37812,
+                "km2": 34.0308,
+                "percent": 14.722407167303267
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 967,
+                "km2": 0.8703,
+                "percent": 0.37650924920084256
+              },
+              "decrease": {
+                "cells": 15986,
+                "km2": 14.3874,
+                "percent": 6.224278032807311
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -1.7025500432740213,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 1927,
+                "km2": 1.7343,
+                "percent": 1.2903269006709432
+              },
+              "decrease": {
+                "cells": 63883,
+                "km2": 57.4947,
+                "percent": 42.77631208903055
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 674,
+                "km2": 0.6066,
+                "percent": 0.45131309343654163
+              },
+              "decrease": {
+                "cells": 33753,
+                "km2": 30.3777,
+                "percent": 22.601143683625505
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 277,
+                "km2": 0.2493,
+                "percent": 0.18548030694647186
+              },
+              "decrease": {
+                "cells": 14933,
+                "km2": 13.4397,
+                "percent": 9.999196475204563
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -0.8149887847113071,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 234,
+                "km2": 0.21059999999999998,
+                "percent": 1.7419787091491103
+              },
+              "decrease": {
+                "cells": 2747,
+                "km2": 2.4722999999999997,
+                "percent": 20.44963894885729
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 48,
+                "km2": 0.0432,
+                "percent": 0.3573289659793047
+              },
+              "decrease": {
+                "cells": 1006,
+                "km2": 0.9054,
+                "percent": 7.489019578649594
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 12,
+                "km2": 0.0108,
+                "percent": 0.08933224149482617
+              },
+              "decrease": {
+                "cells": 290,
+                "km2": 0.261,
+                "percent": 2.1588625027916324
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-07-15",
+      "later_date": "2026-09-25",
+      "units": "dB",
+      "map_png": "barataria/2026-07-15-2026-09-25-hh-difference.png",
+      "map_sha256": "933d462361bf6f80980ad17f1030417c1f835eccdb92154d7c2dfac640093e0a",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.33771264060299355,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 18373,
+                "km2": 16.5357,
+                "percent": 7.153675734816009
+              },
+              "decrease": {
+                "cells": 46918,
+                "km2": 42.2262,
+                "percent": 18.26790171044998
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 5782,
+                "km2": 5.2038,
+                "percent": 2.2512683338979027
+              },
+              "decrease": {
+                "cells": 23726,
+                "km2": 21.3534,
+                "percent": 9.237909458675482
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 2400,
+                "km2": 2.16,
+                "percent": 0.9344593568583477
+              },
+              "decrease": {
+                "cells": 11805,
+                "km2": 10.6245,
+                "percent": 4.596371961546997
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -0.9499876988532585,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 4971,
+                "km2": 4.4738999999999995,
+                "percent": 3.3286014650935436
+              },
+              "decrease": {
+                "cells": 41386,
+                "km2": 37.2474,
+                "percent": 27.712230986594527
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1576,
+                "km2": 1.4183999999999999,
+                "percent": 1.0552958980059193
+              },
+              "decrease": {
+                "cells": 21740,
+                "km2": 19.566,
+                "percent": 14.557190877315156
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 706,
+                "km2": 0.6354,
+                "percent": 0.4727404213148344
+              },
+              "decrease": {
+                "cells": 10903,
+                "km2": 9.8127,
+                "percent": 7.300692370532067
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -0.1855199458480028,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 739,
+                "km2": 0.6651,
+                "percent": 5.501377205389712
+              },
+              "decrease": {
+                "cells": 1539,
+                "km2": 1.3851,
+                "percent": 11.456859971711458
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 177,
+                "km2": 0.1593,
+                "percent": 1.317650562048686
+              },
+              "decrease": {
+                "cells": 573,
+                "km2": 0.5156999999999999,
+                "percent": 4.26561453137795
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 53,
+                "km2": 0.0477,
+                "percent": 0.3945507332688156
+              },
+              "decrease": {
+                "cells": 189,
+                "km2": 0.1701,
+                "percent": 1.4069828035435124
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-08-20",
+      "later_date": "2026-09-25",
+      "units": "dB",
+      "map_png": "barataria/2026-08-20-2026-09-25-hh-difference.png",
+      "map_sha256": "9c36edb3a8cd3379b26b5288ba5c0976c4e69b37aa42056abf3f2631d88849c8",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": 0.749014531131543,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 44224,
+                "km2": 39.8016,
+                "percent": 17.218971082376488
+              },
+              "decrease": {
+                "cells": 5372,
+                "km2": 4.8347999999999995,
+                "percent": 2.091631527101268
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 12893,
+                "km2": 11.6037,
+                "percent": 5.0199935366561155
+              },
+              "decrease": {
+                "cells": 1897,
+                "km2": 1.7073,
+                "percent": 0.7386122499834523
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 3433,
+                "km2": 3.0897,
+                "percent": 1.3366662383727947
+              },
+              "decrease": {
+                "cells": 1112,
+                "km2": 1.0008,
+                "percent": 0.43296616867770105
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": 0.6408651204847224,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 22319,
+                "km2": 20.0871,
+                "percent": 14.944891591113016
+              },
+              "decrease": {
+                "cells": 2557,
+                "km2": 2.3013,
+                "percent": 1.7121774182748322
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 5878,
+                "km2": 5.2902,
+                "percent": 3.9359322896439046
+              },
+              "decrease": {
+                "cells": 569,
+                "km2": 0.5121,
+                "percent": 0.3810046738358934
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1297,
+                "km2": 1.1673,
+                "percent": 0.8684763830670541
+              },
+              "decrease": {
+                "cells": 275,
+                "km2": 0.2475,
+                "percent": 0.18414109895407857
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": 0.622617366113551,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 1831,
+                "km2": 1.6479,
+                "percent": 13.630611181418894
+              },
+              "decrease": {
+                "cells": 232,
+                "km2": 0.20879999999999999,
+                "percent": 1.727090002233306
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 454,
+                "km2": 0.40859999999999996,
+                "percent": 3.3797364698875905
+              },
+              "decrease": {
+                "cells": 40,
+                "km2": 0.036,
+                "percent": 0.29777413831608723
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 71,
+                "km2": 0.0639,
+                "percent": 0.5285490955110549
+              },
+              "decrease": {
+                "cells": 19,
+                "km2": 0.0171,
+                "percent": 0.14144271570014144
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-06-21",
+      "later_date": "2026-07-15",
+      "units": "dB",
+      "map_png": "barataria/2026-06-21-2026-07-15-hv-difference.png",
+      "map_sha256": "49152655466f8b7244b42405c3be2555c9cddb568dfa4b3c528bd17dde9735a4",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.29236375790913094,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 16236,
+                "km2": 14.6124,
+                "percent": 6.321617549146722
+              },
+              "decrease": {
+                "cells": 23950,
+                "km2": 21.555,
+                "percent": 9.325125665315595
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 5418,
+                "km2": 4.8762,
+                "percent": 2.1095419981077197
+              },
+              "decrease": {
+                "cells": 5153,
+                "km2": 4.6377,
+                "percent": 2.006362110787944
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1541,
+                "km2": 1.3869,
+                "percent": 0.6000007787161307
+              },
+              "decrease": {
+                "cells": 927,
+                "km2": 0.8342999999999999,
+                "percent": 0.36093492658653675
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -0.1939046190635727,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 13587,
+                "km2": 12.228299999999999,
+                "percent": 9.097909496323874
+              },
+              "decrease": {
+                "cells": 14663,
+                "km2": 13.1967,
+                "percent": 9.818403396231469
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 4811,
+                "km2": 4.3299,
+                "percent": 3.2214648257020797
+              },
+              "decrease": {
+                "cells": 3512,
+                "km2": 3.1608,
+                "percent": 2.3516492346426325
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1321,
+                "km2": 1.1889,
+                "percent": 0.8845468789757738
+              },
+              "decrease": {
+                "cells": 617,
+                "km2": 0.5553,
+                "percent": 0.4131456656533326
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -0.5163623251449394,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 274,
+                "km2": 0.24659999999999999,
+                "percent": 2.0397528474651976
+              },
+              "decrease": {
+                "cells": 1475,
+                "km2": 1.3275,
+                "percent": 10.980421350405717
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 53,
+                "km2": 0.0477,
+                "percent": 0.3945507332688156
+              },
+              "decrease": {
+                "cells": 271,
+                "km2": 0.2439,
+                "percent": 2.017419787091491
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 8,
+                "km2": 0.0072,
+                "percent": 0.05955482766321745
+              },
+              "decrease": {
+                "cells": 41,
+                "km2": 0.0369,
+                "percent": 0.3052184917739894
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-06-21",
+      "later_date": "2026-08-20",
+      "units": "dB",
+      "map_png": "barataria/2026-06-21-2026-08-20-hv-difference.png",
+      "map_sha256": "2ac863fa38c098ef3764cd10244a12bae75e32f993c07d365878ddf009fbd457",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.9555311787647511,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 6582,
+                "km2": 5.9238,
+                "percent": 2.5627547861840183
+              },
+              "decrease": {
+                "cells": 61176,
+                "km2": 55.0584,
+                "percent": 23.81936900631928
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 2389,
+                "km2": 2.1501,
+                "percent": 0.9301764181394135
+              },
+              "decrease": {
+                "cells": 21970,
+                "km2": 19.773,
+                "percent": 8.554196695907457
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1079,
+                "km2": 0.9711,
+                "percent": 0.42011735252089877
+              },
+              "decrease": {
+                "cells": 5317,
+                "km2": 4.785299999999999,
+                "percent": 2.070216833506598
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -1.3369864391343462,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 3179,
+                "km2": 2.8611,
+                "percent": 2.128671103909148
+              },
+              "decrease": {
+                "cells": 48652,
+                "km2": 43.7868,
+                "percent": 32.577573622959385
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1109,
+                "km2": 0.9981,
+                "percent": 0.7425908317820841
+              },
+              "decrease": {
+                "cells": 19034,
+                "km2": 17.1306,
+                "percent": 12.745242463607022
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 433,
+                "km2": 0.3897,
+                "percent": 0.28993853035314915
+              },
+              "decrease": {
+                "cells": 4755,
+                "km2": 4.2795,
+                "percent": 3.183967001915067
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -1.0276180046956576,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 231,
+                "km2": 0.2079,
+                "percent": 1.719645648775404
+              },
+              "decrease": {
+                "cells": 3171,
+                "km2": 2.8539,
+                "percent": 23.606044815007817
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 54,
+                "km2": 0.0486,
+                "percent": 0.4019950867267178
+              },
+              "decrease": {
+                "cells": 983,
+                "km2": 0.8846999999999999,
+                "percent": 7.317799449117844
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 11,
+                "km2": 0.009899999999999999,
+                "percent": 0.081887888036924
+              },
+              "decrease": {
+                "cells": 192,
+                "km2": 0.1728,
+                "percent": 1.4293158639172188
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-06-21",
+      "later_date": "2026-09-25",
+      "units": "dB",
+      "map_png": "barataria/2026-06-21-2026-09-25-hv-difference.png",
+      "map_sha256": "693d806552f611b389d91aa56e4a1f756e61c937ff40b3e8352e830a15c986d5",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.4889828281906361,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 10413,
+                "km2": 9.3717,
+                "percent": 4.054385534569156
+              },
+              "decrease": {
+                "cells": 35655,
+                "km2": 32.0895,
+                "percent": 13.882561820326828
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 3356,
+                "km2": 3.0204,
+                "percent": 1.306685667340256
+              },
+              "decrease": {
+                "cells": 9689,
+                "km2": 8.7201,
+                "percent": 3.772490295250221
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1637,
+                "km2": 1.4733,
+                "percent": 0.6373791529904647
+              },
+              "decrease": {
+                "cells": 1947,
+                "km2": 1.7523,
+                "percent": 0.7580801532513345
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -0.7597259411840707,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 4961,
+                "km2": 4.4649,
+                "percent": 3.321905425131577
+              },
+              "decrease": {
+                "cells": 28009,
+                "km2": 25.208099999999998,
+                "percent": 18.75493832947195
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1405,
+                "km2": 1.2645,
+                "percent": 0.9407936146562923
+              },
+              "decrease": {
+                "cells": 8041,
+                "km2": 7.2368999999999994,
+                "percent": 5.384285733417257
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 533,
+                "km2": 0.47969999999999996,
+                "percent": 0.3568989299728141
+              },
+              "decrease": {
+                "cells": 1533,
+                "km2": 1.3797,
+                "percent": 1.0265029261694634
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -0.5921279343838783,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 391,
+                "km2": 0.3519,
+                "percent": 2.910742202039753
+              },
+              "decrease": {
+                "cells": 1980,
+                "km2": 1.782,
+                "percent": 14.739819846646318
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 76,
+                "km2": 0.0684,
+                "percent": 0.5657708628005658
+              },
+              "decrease": {
+                "cells": 498,
+                "km2": 0.4482,
+                "percent": 3.707288022035286
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 24,
+                "km2": 0.0216,
+                "percent": 0.17866448298965235
+              },
+              "decrease": {
+                "cells": 99,
+                "km2": 0.0891,
+                "percent": 0.7369909923323159
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-07-15",
+      "later_date": "2026-08-20",
+      "units": "dB",
+      "map_png": "barataria/2026-07-15-2026-08-20-hv-difference.png",
+      "map_sha256": "06bff854a6f91ff4ea580787b321fdd750c65176b6ca98e44cf2306cbb686294",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.6643863551355551,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 7055,
+                "km2": 6.3495,
+                "percent": 2.7469211510981846
+              },
+              "decrease": {
+                "cells": 49005,
+                "km2": 44.1045,
+                "percent": 19.080491992851385
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1678,
+                "km2": 1.5102,
+                "percent": 0.653342833670128
+              },
+              "decrease": {
+                "cells": 18005,
+                "km2": 16.2045,
+                "percent": 7.010391966764396
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 562,
+                "km2": 0.5058,
+                "percent": 0.2188192327309964
+              },
+              "decrease": {
+                "cells": 5134,
+                "km2": 4.6206,
+                "percent": 1.9989643075461487
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -1.1548426457970473,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 2435,
+                "km2": 2.1915,
+                "percent": 1.630485730738841
+              },
+              "decrease": {
+                "cells": 42715,
+                "km2": 38.4435,
+                "percent": 28.602134697539874
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 575,
+                "km2": 0.5175,
+                "percent": 0.38502229781307334
+              },
+              "decrease": {
+                "cells": 16765,
+                "km2": 15.0885,
+                "percent": 11.225910996236825
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 173,
+                "km2": 0.1557,
+                "percent": 0.11584149134202033
+              },
+              "decrease": {
+                "cells": 4862,
+                "km2": 4.3758,
+                "percent": 3.2556146295081088
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -0.4888346984903542,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 357,
+                "km2": 0.3213,
+                "percent": 2.6576341844710787
+              },
+              "decrease": {
+                "cells": 1681,
+                "km2": 1.5129,
+                "percent": 12.513958162733566
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 55,
+                "km2": 0.049499999999999995,
+                "percent": 0.40943944018462
+              },
+              "decrease": {
+                "cells": 394,
+                "km2": 0.35459999999999997,
+                "percent": 2.9330752624134595
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 6,
+                "km2": 0.0054,
+                "percent": 0.044666120747413086
+              },
+              "decrease": {
+                "cells": 65,
+                "km2": 0.058499999999999996,
+                "percent": 0.4838829747636418
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-07-15",
+      "later_date": "2026-09-25",
+      "units": "dB",
+      "map_png": "barataria/2026-07-15-2026-09-25-hv-difference.png",
+      "map_sha256": "9681667c5ffe949a96552a95c12cabc2797f75cc4c43180c5be79bcd2642de43",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": -0.1834514746967919,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 15249,
+                "km2": 13.7241,
+                "percent": 5.937321138638726
+              },
+              "decrease": {
+                "cells": 31996,
+                "km2": 28.7964,
+                "percent": 12.457900659183204
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 4228,
+                "km2": 3.8051999999999997,
+                "percent": 1.6462059003321223
+              },
+              "decrease": {
+                "cells": 11994,
+                "km2": 10.794599999999999,
+                "percent": 4.669960635899592
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1767,
+                "km2": 1.5903,
+                "percent": 0.6879957014869584
+              },
+              "decrease": {
+                "cells": 3818,
+                "km2": 3.4362,
+                "percent": 1.486569093535488
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": -0.5791698483551588,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 6654,
+                "km2": 5.9886,
+                "percent": 4.455544990692505
+              },
+              "decrease": {
+                "cells": 27751,
+                "km2": 24.9759,
+                "percent": 18.582180498453216
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1800,
+                "km2": 1.6199999999999999,
+                "percent": 1.2052871931539688
+              },
+              "decrease": {
+                "cells": 10882,
+                "km2": 9.7938,
+                "percent": 7.286630686611938
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 632,
+                "km2": 0.5688,
+                "percent": 0.4231897255962824
+              },
+              "decrease": {
+                "cells": 3412,
+                "km2": 3.0707999999999998,
+                "percent": 2.2846888350229673
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": -0.04540912212602066,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 806,
+                "km2": 0.7253999999999999,
+                "percent": 6.000148887069158
+              },
+              "decrease": {
+                "cells": 1067,
+                "km2": 0.9602999999999999,
+                "percent": 7.943125139581627
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 164,
+                "km2": 0.1476,
+                "percent": 1.2208739670959576
+              },
+              "decrease": {
+                "cells": 285,
+                "km2": 0.2565,
+                "percent": 2.1216407355021216
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 39,
+                "km2": 0.0351,
+                "percent": 0.29032978485818506
+              },
+              "decrease": {
+                "cells": 62,
+                "km2": 0.055799999999999995,
+                "percent": 0.46154991438993526
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-08-20",
+      "later_date": "2026-09-25",
+      "units": "dB",
+      "map_png": "barataria/2026-08-20-2026-09-25-hv-difference.png",
+      "map_sha256": "70ea773f87a6609bd720e362aaf011bbcf0d070c4c8acd1ed321eefde999bac7",
+      "valid_pair_cells": 256833,
+      "valid_pair_area_km2": 231.1497,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 256833,
+          "valid_area_km2": 231.1497,
+          "coverage": 0.9972896466833119,
+          "median_db": 0.4645581646264958,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 27653,
+                "km2": 24.8877,
+                "percent": 10.766918581334954
+              },
+              "decrease": {
+                "cells": 6170,
+                "km2": 5.553,
+                "percent": 2.402339263256669
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 6567,
+                "km2": 5.910299999999999,
+                "percent": 2.5569144152036536
+              },
+              "decrease": {
+                "cells": 1545,
+                "km2": 1.3905,
+                "percent": 0.6015582109775613
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1781,
+                "km2": 1.6029,
+                "percent": 0.6934467144019655
+              },
+              "decrease": {
+                "cells": 717,
+                "km2": 0.6453,
+                "percent": 0.2791697328614314
+              }
+            }
+          }
+        },
+        "Freshwater emergent wetlands": {
+          "valid_cells": 149342,
+          "valid_area_km2": 134.4078,
+          "coverage": 0.9978485140047039,
+          "median_db": 0.5476433362340023,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 18522,
+                "km2": 16.6698,
+                "percent": 12.402405217554339
+              },
+              "decrease": {
+                "cells": 3078,
+                "km2": 2.7702,
+                "percent": 2.0610411002932865
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 4296,
+                "km2": 3.8664,
+                "percent": 2.8766187676608053
+              },
+              "decrease": {
+                "cells": 540,
+                "km2": 0.486,
+                "percent": 0.36158615794619064
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 859,
+                "km2": 0.7731,
+                "percent": 0.5751898327329218
+              },
+              "decrease": {
+                "cells": 213,
+                "km2": 0.19169999999999998,
+                "percent": 0.1426256511898863
+              }
+            }
+          }
+        },
+        "Freshwater forested/shrub wetlands": {
+          "valid_cells": 13433,
+          "valid_area_km2": 12.0897,
+          "coverage": 0.9974753100170788,
+          "median_db": 0.44290081357314115,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 1269,
+                "km2": 1.1421,
+                "percent": 9.446884538077867
+              },
+              "decrease": {
+                "cells": 262,
+                "km2": 0.23579999999999998,
+                "percent": 1.9504206059703715
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 257,
+                "km2": 0.2313,
+                "percent": 1.9131988386808605
+              },
+              "decrease": {
+                "cells": 45,
+                "km2": 0.0405,
+                "percent": 0.33499590560559817
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 34,
+                "km2": 0.0306,
+                "percent": 0.2531080175686742
+              },
+              "decrease": {
+                "cells": 8,
+                "km2": 0.0072,
+                "percent": 0.05955482766321745
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chart_rows": [
+    {
+      "date": "2026-06-21",
+      "polarization": "HH",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -5.888233188734238
+    },
+    {
+      "date": "2026-06-21",
+      "polarization": "HH",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -5.244425695370197
+    },
+    {
+      "date": "2026-07-15",
+      "polarization": "HH",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -6.816102864413203
+    },
+    {
+      "date": "2026-07-15",
+      "polarization": "HH",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -6.502551420648716
+    },
+    {
+      "date": "2026-08-20",
+      "polarization": "HH",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -8.710371629270366
+    },
+    {
+      "date": "2026-08-20",
+      "polarization": "HH",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -7.5071172851936785
+    },
+    {
+      "date": "2026-09-25",
+      "polarization": "HH",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -7.9886452931792995
+    },
+    {
+      "date": "2026-09-25",
+      "polarization": "HH",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -6.821055699704815
+    },
+    {
+      "date": "2026-06-21",
+      "polarization": "HV",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -14.991688741048737
+    },
+    {
+      "date": "2026-06-21",
+      "polarization": "HV",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -13.034506359590633
+    },
+    {
+      "date": "2026-07-15",
+      "polarization": "HV",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -15.149393172055508
+    },
+    {
+      "date": "2026-07-15",
+      "polarization": "HV",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -13.579219456254716
+    },
+    {
+      "date": "2026-08-20",
+      "polarization": "HV",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -16.52621835445083
+    },
+    {
+      "date": "2026-08-20",
+      "polarization": "HV",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -14.119865304018258
+    },
+    {
+      "date": "2026-09-25",
+      "polarization": "HV",
+      "class": "Freshwater emergent wetlands",
+      "valid_cells": 149342,
+      "area_km2": 134.4078,
+      "coverage": 0.9978485140047039,
+      "median_db": -15.90994755044689
+    },
+    {
+      "date": "2026-09-25",
+      "polarization": "HV",
+      "class": "Freshwater forested/shrub wetlands",
+      "valid_cells": 13433,
+      "area_km2": 12.0897,
+      "coverage": 0.9974753100170788,
+      "median_db": -13.564201045089195
+    }
+  ],
+  "contexts": {
+    "Freshwater emergent wetlands": {
+      "source": "https://fwspublicservices.wim.usgs.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0",
+      "asset": "barataria/barataria-nwi-emergent.geojson",
+      "features": 82,
+      "sha256": "bb2b587a876d151aea5a0b132284531e5e302a747a967ab774db791525c1b2be"
+    },
+    "Freshwater forested/shrub wetlands": {
+      "source": "https://fwspublicservices.wim.usgs.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0",
+      "asset": "barataria/barataria-nwi-forested-shrub.geojson",
+      "features": 268,
+      "sha256": "380208c38966936d01a0e6556f21d413a15f98bfe116ea852d0ce99612a95099"
+    }
+  },
+  "provenance": {
+    "collection": "C2854338529-ASF",
+    "product": "NISAR_L2_GCOV_PROVISIONAL_V1",
+    "crid": "P05023",
+    "mask_codes_accepted": [
+      1
+    ],
+    "withheld_dates": {},
+    "aggregation": "mean valid linear gamma-zero power, then 10 log10",
+    "minimum_source_cells": 8,
+    "source_qa": "data/cache/phase-2a/qa.json"
+  }
+}

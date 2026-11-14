@@ -1,0 +1,932 @@
+{
+  "release_id": "nisar-pilot-20261114-v1",
+  "region_id": "santa-rosa",
+  "region": "Santa Rosa Island, California",
+  "aliases": [
+    "Santa Rosa Island",
+    "Channel Islands",
+    "California wildfire"
+  ],
+  "bounds_wgs84": [
+    -120.15,
+    33.87,
+    -120,
+    34.01
+  ],
+  "crs": "EPSG:32610",
+  "transform": [
+    30.0,
+    0.0,
+    763200.0,
+    0.0,
+    -30.0,
+    3767340.0
+  ],
+  "width": 477,
+  "height": 532,
+  "display_crs": "EPSG:3857",
+  "display_width": 491,
+  "display_height": 546,
+  "display_corners_wgs84": [
+    [
+      -120.15468214009353,
+      34.01371125898917
+    ],
+    [
+      -119.99500121036127,
+      34.01371125898917
+    ],
+    [
+      -119.99500121036127,
+      33.86639715551974
+    ],
+    [
+      -120.15468214009353,
+      33.86639715551974
+    ]
+  ],
+  "cell_size_m": 30,
+  "dates": [
+    "2026-05-05",
+    "2026-05-29",
+    "2026-06-10"
+  ],
+  "withheld_dates": {
+    "2026-05-17": "Broad, reversing radiometric shift in both channels"
+  },
+  "display_scales_db": {
+    "HH": [
+      -24.103822552392504,
+      -5.8912028569696915
+    ],
+    "HV": [
+      -26.806072111703024,
+      -12.988204428504606
+    ]
+  },
+  "difference_display_scale_db": [
+    -6.0,
+    6.0
+  ],
+  "difference_sign_convention": "later date minus earlier date",
+  "missing_pixels": "transparent",
+  "analysis_grid_encoding": {
+    "format": "raw-binary",
+    "dtype": "float32",
+    "byte_order": "little-endian",
+    "units": "dB",
+    "nodata": "NaN",
+    "row_order": "north-to-south",
+    "column_order": "west-to-east"
+  },
+  "observations": [
+    {
+      "id": "santa-rosa:nisar-gcov:hh-backscatter:2026-05-05",
+      "region_id": "santa-rosa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-05-05",
+      "granule_id": "G4275207669-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260505T024859",
+      "acquisition_end_utc": "20260505T024934",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275207669-ASF",
+      "source_checksums": {
+        "463543410_NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "eee4adc6bdab836e02fcbb95565f2562e67c96fbd552c35977a1b678f0401496",
+        "463543421_NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "11f3ad3ea27ebc16b53513f77937d42f912c3cb4b1f87b4d578355c57b5cca8b"
+      },
+      "assets": {
+        "map_png": "santa-rosa/2026-05-05-hh.png",
+        "values_f32": "santa-rosa/2026-05-05-hh.f32"
+      },
+      "checksums": {
+        "map_png": "568c3008a09dd84b73a992b03faa3a0b5bbdd134e6e58d9a5fbf4d258345a6ff",
+        "values_f32": "86674c177c02b8687cb91cf076306c424e18ad86054bad7f2e23996b0db12ff8"
+      },
+      "valid_cells": 238854,
+      "coverage": 0.9972360927871207
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hh-backscatter:2026-05-29",
+      "region_id": "santa-rosa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-05-29",
+      "granule_id": "G4275289271-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260529T024858",
+      "acquisition_end_utc": "20260529T024932",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275289271-ASF",
+      "source_checksums": {
+        "463549318_NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "327cdc8912404ca44f6c0b991bffa125e1081495f6a193cb21b3fab73c45ce0a",
+        "463550517_NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "7bd8e9cb360f65f58eb827f9963e2f4ac3483ab8bed3ac954f225865bf62f974"
+      },
+      "assets": {
+        "map_png": "santa-rosa/2026-05-29-hh.png",
+        "values_f32": "santa-rosa/2026-05-29-hh.f32"
+      },
+      "checksums": {
+        "map_png": "4eaa86ddc1f648e6c5a69138ed683a4ca42aab0dac6393f4a6141baff62a504e",
+        "values_f32": "8d279bcaa454c0a8e2cd129f273f822174fde490360f440511dfd3c895b72544"
+      },
+      "valid_cells": 238854,
+      "coverage": 0.9972360927871207
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hh-backscatter:2026-06-10",
+      "region_id": "santa-rosa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-06-10",
+      "granule_id": "G4275286666-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260610T024857",
+      "acquisition_end_utc": "20260610T024932",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275286666-ASF",
+      "source_checksums": {
+        "463543433_NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "f145865ed3e99d8b17ab57c3684af46b5ba9fb1d1295d6a8b38372389f640c9b",
+        "463543441_NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "e4f8f86073aff0877dbc79b5436aa89d1aa3dc6787e16e8756b57513cd891019"
+      },
+      "assets": {
+        "map_png": "santa-rosa/2026-06-10-hh.png",
+        "values_f32": "santa-rosa/2026-06-10-hh.f32"
+      },
+      "checksums": {
+        "map_png": "44f941a7275aea60c0e3c1da69c7dab96f41d822a1ea09ef06afde50b3cda689",
+        "values_f32": "c3fcb20a8e1e413a74b5366a36690d7835b19ee8c76b348b90ebe0921ce4a648"
+      },
+      "valid_cells": 238854,
+      "coverage": 0.9972360927871207
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hv-backscatter:2026-05-05",
+      "region_id": "santa-rosa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-05-05",
+      "granule_id": "G4275207669-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260505T024859",
+      "acquisition_end_utc": "20260505T024934",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275207669-ASF",
+      "source_checksums": {
+        "463543414_NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "fa6f473296591efc74a5535c1e0ad07680c83466446d61aae0e144f074f1bfd6",
+        "463543421_NISAR_L2_PR_GCOV_019_114_D_071_4005_DHDH_A_20260505T024859_20260505T024934_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "11f3ad3ea27ebc16b53513f77937d42f912c3cb4b1f87b4d578355c57b5cca8b"
+      },
+      "assets": {
+        "map_png": "santa-rosa/2026-05-05-hv.png",
+        "values_f32": "santa-rosa/2026-05-05-hv.f32"
+      },
+      "checksums": {
+        "map_png": "b68eda022fdfa47304daa4878f551c5df07392ba0f5c73e6f9321f2e8f0a2533",
+        "values_f32": "6d0f6dcd97b02a956bb293067a48f7fb3c34961679a582316becd28536c66ff6"
+      },
+      "valid_cells": 238854,
+      "coverage": 0.9972360927871207
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hv-backscatter:2026-05-29",
+      "region_id": "santa-rosa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-05-29",
+      "granule_id": "G4275289271-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260529T024858",
+      "acquisition_end_utc": "20260529T024932",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275289271-ASF",
+      "source_checksums": {
+        "463550386_NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "3659c50e8945eb8c340f892e751b6d2a53e5ce143d4fcdedfcc3a63de2caf581",
+        "463550517_NISAR_L2_PR_GCOV_021_114_D_071_4005_DHDH_A_20260529T024858_20260529T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "7bd8e9cb360f65f58eb827f9963e2f4ac3483ab8bed3ac954f225865bf62f974"
+      },
+      "assets": {
+        "map_png": "santa-rosa/2026-05-29-hv.png",
+        "values_f32": "santa-rosa/2026-05-29-hv.f32"
+      },
+      "checksums": {
+        "map_png": "215630746f13f8f81956505ba8e2bd25ea39a8cb4ab225c80c1c943384c4f9b4",
+        "values_f32": "66cf5fcfc184075c48e09fa8d0edac91523fd4360e7b29cfbd0e0013b8373c50"
+      },
+      "valid_cells": 238854,
+      "coverage": 0.9972360927871207
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hv-backscatter:2026-06-10",
+      "region_id": "santa-rosa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-06-10",
+      "granule_id": "G4275286666-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260610T024857",
+      "acquisition_end_utc": "20260610T024932",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275286666-ASF",
+      "source_checksums": {
+        "463543435_NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "1f3887aeb588dfb0b91bf07679f1632e6b2d577398164eba6374df730b1a0f28",
+        "463543441_NISAR_L2_PR_GCOV_022_114_D_071_4005_DHDH_A_20260610T024857_20260610T024932_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "e4f8f86073aff0877dbc79b5436aa89d1aa3dc6787e16e8756b57513cd891019"
+      },
+      "assets": {
+        "map_png": "santa-rosa/2026-06-10-hv.png",
+        "values_f32": "santa-rosa/2026-06-10-hv.f32"
+      },
+      "checksums": {
+        "map_png": "0ed612c8b25caa615b09da01682ec3e75f69622d34d1a5d8c361045f2337704f",
+        "values_f32": "25e1faf2c4876ea98953a7089a50d05a8be9a8cf95769549f187cceb42962b85"
+      },
+      "valid_cells": 238854,
+      "coverage": 0.9972360927871207
+    }
+  ],
+  "pairs": [
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-05-05",
+      "later_date": "2026-05-29",
+      "units": "dB",
+      "map_png": "santa-rosa/2026-05-05-2026-05-29-hh-difference.png",
+      "map_sha256": "02f225879079ff172ee79e79f776e8f5ac359485d906dc777a448d8f532c52f9",
+      "valid_pair_cells": 238854,
+      "valid_pair_area_km2": 214.96859999999998,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 238854,
+          "valid_area_km2": 214.96859999999998,
+          "coverage": 0.9972360927871207,
+          "median_db": -0.49739881013015363,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 14594,
+                "km2": 13.134599999999999,
+                "percent": 6.110008624515395
+              },
+              "decrease": {
+                "cells": 55890,
+                "km2": 50.301,
+                "percent": 23.399231329598834
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 7988,
+                "km2": 7.1892,
+                "percent": 3.344302377184389
+              },
+              "decrease": {
+                "cells": 36869,
+                "km2": 33.1821,
+                "percent": 15.43578922689174
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 4347,
+                "km2": 3.9123,
+                "percent": 1.8199402145243537
+              },
+              "decrease": {
+                "cells": 22194,
+                "km2": 19.9746,
+                "percent": 9.29186867291316
+              }
+            }
+          }
+        },
+        "NIFC incident perimeter": {
+          "valid_cells": 72693,
+          "valid_area_km2": 65.4237,
+          "coverage": 0.9992989112504124,
+          "median_db": -0.6268993889709531,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 2532,
+                "km2": 2.2788,
+                "percent": 3.4831414303990758
+              },
+              "decrease": {
+                "cells": 13485,
+                "km2": 12.1365,
+                "percent": 18.550616978251
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 871,
+                "km2": 0.7838999999999999,
+                "percent": 1.198189646871088
+              },
+              "decrease": {
+                "cells": 5711,
+                "km2": 5.1399,
+                "percent": 7.856327294237409
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 296,
+                "km2": 0.26639999999999997,
+                "percent": 0.40719188917777505
+              },
+              "decrease": {
+                "cells": 2184,
+                "km2": 1.9656,
+                "percent": 3.00441583096034
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-05-05",
+      "later_date": "2026-06-10",
+      "units": "dB",
+      "map_png": "santa-rosa/2026-05-05-2026-06-10-hh-difference.png",
+      "map_sha256": "28bb4c7d6f20aa1d68cea151eb778cd519caf53392f906e3e61c048fb9654e7b",
+      "valid_pair_cells": 238854,
+      "valid_pair_area_km2": 214.96859999999998,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 238854,
+          "valid_area_km2": 214.96859999999998,
+          "coverage": 0.9972360927871207,
+          "median_db": 0.4611307827681852,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 57046,
+                "km2": 51.3414,
+                "percent": 23.883208989591967
+              },
+              "decrease": {
+                "cells": 18138,
+                "km2": 16.3242,
+                "percent": 7.593760204978774
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 35197,
+                "km2": 31.6773,
+                "percent": 14.735780016244233
+              },
+              "decrease": {
+                "cells": 7005,
+                "km2": 6.3045,
+                "percent": 2.932753899871888
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 21035,
+                "km2": 18.9315,
+                "percent": 8.806635015532501
+              },
+              "decrease": {
+                "cells": 2519,
+                "km2": 2.2671,
+                "percent": 1.0546191397255227
+              }
+            }
+          }
+        },
+        "NIFC incident perimeter": {
+          "valid_cells": 72693,
+          "valid_area_km2": 65.4237,
+          "coverage": 0.9992989112504124,
+          "median_db": -0.6380773826478503,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 3189,
+                "km2": 2.8701,
+                "percent": 4.386942346580827
+              },
+              "decrease": {
+                "cells": 14752,
+                "km2": 13.2768,
+                "percent": 20.293563341724788
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 827,
+                "km2": 0.7443,
+                "percent": 1.1376611228041213
+              },
+              "decrease": {
+                "cells": 6213,
+                "km2": 5.5916999999999994,
+                "percent": 8.546902727910528
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 193,
+                "km2": 0.1737,
+                "percent": 0.26550011693010334
+              },
+              "decrease": {
+                "cells": 2279,
+                "km2": 2.0511,
+                "percent": 3.135102417014018
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-05-29",
+      "later_date": "2026-06-10",
+      "units": "dB",
+      "map_png": "santa-rosa/2026-05-29-2026-06-10-hh-difference.png",
+      "map_sha256": "01d1750c330d276492194a661d9dfa5c26b2361a13e8937941ae23260ed0aa88",
+      "valid_pair_cells": 238854,
+      "valid_pair_area_km2": 214.96859999999998,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 238854,
+          "valid_area_km2": 214.96859999999998,
+          "coverage": 0.9972360927871207,
+          "median_db": 0.714181155919178,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 71849,
+                "km2": 64.6641,
+                "percent": 30.080718765438302
+              },
+              "decrease": {
+                "cells": 6731,
+                "km2": 6.0579,
+                "percent": 2.818039471811232
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 53415,
+                "km2": 48.073499999999996,
+                "percent": 22.36303348489035
+              },
+              "decrease": {
+                "cells": 2059,
+                "km2": 1.8531,
+                "percent": 0.8620328736382895
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 41128,
+                "km2": 37.0152,
+                "percent": 17.218886851382017
+              },
+              "decrease": {
+                "cells": 692,
+                "km2": 0.6228,
+                "percent": 0.28971673072253346
+              }
+            }
+          }
+        },
+        "NIFC incident perimeter": {
+          "valid_cells": 72693,
+          "valid_area_km2": 65.4237,
+          "coverage": 0.9992989112504124,
+          "median_db": 0.0002442639894617571,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 4768,
+                "km2": 4.2912,
+                "percent": 6.5590909716203765
+              },
+              "decrease": {
+                "cells": 4142,
+                "km2": 3.7278,
+                "percent": 5.697935151940352
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1271,
+                "km2": 1.1439,
+                "percent": 1.748448956570784
+              },
+              "decrease": {
+                "cells": 1435,
+                "km2": 1.2914999999999999,
+                "percent": 1.9740552735476593
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 307,
+                "km2": 0.2763,
+                "percent": 0.42232402019451665
+              },
+              "decrease": {
+                "cells": 525,
+                "km2": 0.4725,
+                "percent": 0.722215343980851
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-05-05",
+      "later_date": "2026-05-29",
+      "units": "dB",
+      "map_png": "santa-rosa/2026-05-05-2026-05-29-hv-difference.png",
+      "map_sha256": "4e662c512daad80d24c100758511d2745f5bae502f9360beaf6f3c2b43fc1c44",
+      "valid_pair_cells": 238854,
+      "valid_pair_area_km2": 214.96859999999998,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 238854,
+          "valid_area_km2": 214.96859999999998,
+          "coverage": 0.9972360927871207,
+          "median_db": -0.3036088390178371,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 6886,
+                "km2": 6.1974,
+                "percent": 2.8829326701667126
+              },
+              "decrease": {
+                "cells": 24101,
+                "km2": 21.6909,
+                "percent": 10.090264345583494
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1194,
+                "km2": 1.0746,
+                "percent": 0.4998869602351227
+              },
+              "decrease": {
+                "cells": 7455,
+                "km2": 6.7095,
+                "percent": 3.1211535080007033
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 196,
+                "km2": 0.1764,
+                "percent": 0.08205849598499501
+              },
+              "decrease": {
+                "cells": 2269,
+                "km2": 2.0421,
+                "percent": 0.9499526907650698
+              }
+            }
+          }
+        },
+        "NIFC incident perimeter": {
+          "valid_cells": 72693,
+          "valid_area_km2": 65.4237,
+          "coverage": 0.9992989112504124,
+          "median_db": -0.634488020721701,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 1990,
+                "km2": 1.791,
+                "percent": 2.7375400657559874
+              },
+              "decrease": {
+                "cells": 14002,
+                "km2": 12.601799999999999,
+                "percent": 19.26182713603786
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 436,
+                "km2": 0.39239999999999997,
+                "percent": 0.5997826475726686
+              },
+              "decrease": {
+                "cells": 5782,
+                "km2": 5.2038,
+                "percent": 7.953998321709105
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 83,
+                "km2": 0.0747,
+                "percent": 0.11417880676268692
+              },
+              "decrease": {
+                "cells": 2101,
+                "km2": 1.8909,
+                "percent": 2.890237024197653
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-05-05",
+      "later_date": "2026-06-10",
+      "units": "dB",
+      "map_png": "santa-rosa/2026-05-05-2026-06-10-hv-difference.png",
+      "map_sha256": "81bb244827837b2fd79fc0333fd5ff7a6e66772d0a6cd27e8e85913479b1f9c8",
+      "valid_pair_cells": 238854,
+      "valid_pair_area_km2": 214.96859999999998,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 238854,
+          "valid_area_km2": 214.96859999999998,
+          "coverage": 0.9972360927871207,
+          "median_db": 0.35516021177597246,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 34063,
+                "km2": 30.6567,
+                "percent": 14.261013003759619
+              },
+              "decrease": {
+                "cells": 19173,
+                "km2": 17.2557,
+                "percent": 8.027079303675048
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 10915,
+                "km2": 9.8235,
+                "percent": 4.569737161613371
+              },
+              "decrease": {
+                "cells": 7904,
+                "km2": 7.1136,
+                "percent": 3.309134450333677
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 2403,
+                "km2": 2.1627,
+                "percent": 1.0060539074078725
+              },
+              "decrease": {
+                "cells": 2907,
+                "km2": 2.6163,
+                "percent": 1.2170614685121455
+              }
+            }
+          }
+        },
+        "NIFC incident perimeter": {
+          "valid_cells": 72693,
+          "valid_area_km2": 65.4237,
+          "coverage": 0.9992989112504124,
+          "median_db": -0.7554696494985471,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 2274,
+                "km2": 2.0465999999999998,
+                "percent": 3.1282241756427718
+              },
+              "decrease": {
+                "cells": 17026,
+                "km2": 15.3234,
+                "percent": 23.42178751736756
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 451,
+                "km2": 0.4059,
+                "percent": 0.6204173716864072
+              },
+              "decrease": {
+                "cells": 7609,
+                "km2": 6.8481,
+                "percent": 10.467307718762466
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 64,
+                "km2": 0.0576,
+                "percent": 0.08804148955195136
+              },
+              "decrease": {
+                "cells": 2857,
+                "km2": 2.5713,
+                "percent": 3.9302271195300786
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-05-29",
+      "later_date": "2026-06-10",
+      "units": "dB",
+      "map_png": "santa-rosa/2026-05-29-2026-06-10-hv-difference.png",
+      "map_sha256": "3f3c035e490d00f52b762485c8daf16b119e744868dda1e021fdbb0748e62928",
+      "valid_pair_cells": 238854,
+      "valid_pair_area_km2": 214.96859999999998,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 238854,
+          "valid_area_km2": 214.96859999999998,
+          "coverage": 0.9972360927871207,
+          "median_db": 0.5196665767959745,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 42691,
+                "km2": 38.4219,
+                "percent": 17.87326149028277
+              },
+              "decrease": {
+                "cells": 5728,
+                "km2": 5.1552,
+                "percent": 2.398117678581895
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 18587,
+                "km2": 16.7283,
+                "percent": 7.781741147311747
+              },
+              "decrease": {
+                "cells": 1160,
+                "km2": 1.044,
+                "percent": 0.48565232317650114
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 6497,
+                "km2": 5.8473,
+                "percent": 2.720071675584248
+              },
+              "decrease": {
+                "cells": 245,
+                "km2": 0.2205,
+                "percent": 0.10257311998124377
+              }
+            }
+          }
+        },
+        "NIFC incident perimeter": {
+          "valid_cells": 72693,
+          "valid_area_km2": 65.4237,
+          "coverage": 0.9992989112504124,
+          "median_db": -0.10486358764774728,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 2725,
+                "km2": 2.4525,
+                "percent": 3.748641547329179
+              },
+              "decrease": {
+                "cells": 4098,
+                "km2": 3.6881999999999997,
+                "percent": 5.637406627873386
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 361,
+                "km2": 0.32489999999999997,
+                "percent": 0.49660902700397563
+              },
+              "decrease": {
+                "cells": 912,
+                "km2": 0.8208,
+                "percent": 1.254591226115307
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 32,
+                "km2": 0.0288,
+                "percent": 0.04402074477597568
+              },
+              "decrease": {
+                "cells": 194,
+                "km2": 0.1746,
+                "percent": 0.2668757652043526
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chart_rows": [
+    {
+      "date": "2026-05-05",
+      "polarization": "HH",
+      "class": "NIFC incident perimeter",
+      "valid_cells": 72693,
+      "area_km2": 65.4237,
+      "coverage": 0.9992989112504124,
+      "median_db": -12.808037112949012
+    },
+    {
+      "date": "2026-05-29",
+      "polarization": "HH",
+      "class": "NIFC incident perimeter",
+      "valid_cells": 72693,
+      "area_km2": 65.4237,
+      "coverage": 0.9992989112504124,
+      "median_db": -13.836995940516776
+    },
+    {
+      "date": "2026-06-10",
+      "polarization": "HH",
+      "class": "NIFC incident perimeter",
+      "valid_cells": 72693,
+      "area_km2": 65.4237,
+      "coverage": 0.9992989112504124,
+      "median_db": -13.797648519610535
+    },
+    {
+      "date": "2026-05-05",
+      "polarization": "HV",
+      "class": "NIFC incident perimeter",
+      "valid_cells": 72693,
+      "area_km2": 65.4237,
+      "coverage": 0.9992989112504124,
+      "median_db": -18.652887632549454
+    },
+    {
+      "date": "2026-05-29",
+      "polarization": "HV",
+      "class": "NIFC incident perimeter",
+      "valid_cells": 72693,
+      "area_km2": 65.4237,
+      "coverage": 0.9992989112504124,
+      "median_db": -19.59251904884113
+    },
+    {
+      "date": "2026-06-10",
+      "polarization": "HV",
+      "class": "NIFC incident perimeter",
+      "valid_cells": 72693,
+      "area_km2": 65.4237,
+      "coverage": 0.9992989112504124,
+      "median_db": -19.766779330552822
+    }
+  ],
+  "contexts": {
+    "NIFC incident perimeter": {
+      "source": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0",
+      "asset": "santa-rosa/santa-rosa-perimeter-clipped.geojson",
+      "features": 1,
+      "sha256": "0d95f836e98e11912bcf4560d62164dd4037740adb624f507e4c8b0797aed1be"
+    }
+  },
+  "provenance": {
+    "collection": "C2854338529-ASF",
+    "product": "NISAR_L2_GCOV_PROVISIONAL_V1",
+    "crid": "P05023",
+    "mask_codes_accepted": [
+      1
+    ],
+    "withheld_dates": {
+      "2026-05-17": "Broad, reversing radiometric shift in both channels"
+    },
+    "aggregation": "mean valid linear gamma-zero power, then 10 log10",
+    "minimum_source_cells": 8,
+    "source_qa": "data/cache/phase-2a/qa.json"
+  }
+}

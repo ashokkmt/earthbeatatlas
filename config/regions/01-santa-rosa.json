@@ -1,0 +1,26 @@
+{
+  "name": "Santa Rosa",
+  "slug": "santa-rosa",
+  "full_name": "Santa Rosa Island, California",
+  "title": "Santa Rosa Island wildfire context",
+  "bounds_wgs84": [
+    -120.15,
+    33.87,
+    -120.0,
+    34.01
+  ],
+  "analysis_epsg": 32610,
+  "aliases": [
+    "Santa Rosa Island",
+    "Channel Islands",
+    "California wildfire"
+  ],
+  "context_layers": [
+    {
+      "filename": "santa-rosa-perimeter-clipped.geojson",
+      "label": "NIFC incident perimeter",
+      "source": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/ArcGIS/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0",
+      "features": 1
+    }
+  ]
+}

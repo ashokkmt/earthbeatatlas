@@ -1,0 +1,1605 @@
+{
+  "release_id": "nisar-pilot-20261114-v1",
+  "region_id": "colusa",
+  "region": "Sacramento Valley near Colusa, California",
+  "aliases": [
+    "Colusa",
+    "Sacramento Valley",
+    "California rice"
+  ],
+  "bounds_wgs84": [
+    -121.97,
+    39.08,
+    -121.8,
+    39.2
+  ],
+  "crs": "EPSG:32610",
+  "transform": [
+    30.0,
+    0.0,
+    588930.0,
+    0.0,
+    -30.0,
+    4339650.0
+  ],
+  "width": 496,
+  "height": 450,
+  "display_crs": "EPSG:3857",
+  "display_width": 501,
+  "display_height": 457,
+  "display_corners_wgs84": [
+    [
+      -121.97185050080259,
+      39.20156435572951
+    ],
+    [
+      -121.79762685564336,
+      39.20156435572951
+    ],
+    [
+      -121.79762685564336,
+      39.078303010935336
+    ],
+    [
+      -121.97185050080259,
+      39.078303010935336
+    ]
+  ],
+  "cell_size_m": 30,
+  "dates": [
+    "2026-06-04",
+    "2026-07-22",
+    "2026-08-27",
+    "2026-10-14"
+  ],
+  "withheld_dates": {},
+  "display_scales_db": {
+    "HH": [
+      -18.835661321815632,
+      -3.637605388482394
+    ],
+    "HV": [
+      -23.51085943862458,
+      -9.995632875110005
+    ]
+  },
+  "difference_display_scale_db": [
+    -6.0,
+    6.0
+  ],
+  "difference_sign_convention": "later date minus earlier date",
+  "missing_pixels": "transparent",
+  "analysis_grid_encoding": {
+    "format": "raw-binary",
+    "dtype": "float32",
+    "byte_order": "little-endian",
+    "units": "dB",
+    "nodata": "NaN",
+    "row_order": "north-to-south",
+    "column_order": "west-to-east"
+  },
+  "observations": [
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-06-04",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-06-04",
+      "granule_id": "G4275305452-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260604T130934",
+      "acquisition_end_utc": "20260604T131009",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275305452-ASF",
+      "source_checksums": {
+        "463553897_NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "39ec317d5fb30fb1e3763e0ca177dfc32031b3f0c5609659f6076a0388d67371",
+        "463555116_NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-06-04-hh.png",
+        "values_f32": "colusa/2026-06-04-hh.f32"
+      },
+      "checksums": {
+        "map_png": "52b99ea987416d4a190e8acd261b6991d83f69264d89f924b6784d90b2fff649",
+        "values_f32": "b6f1a0efe56fc2c9c8055e4290d1abaae1f7d011d77c41ec504d2a171b3119d3"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-07-22",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-07-22",
+      "granule_id": "G4260071943-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260722T130932",
+      "acquisition_end_utc": "20260722T131006",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4260071943-ASF",
+      "source_checksums": {
+        "463555134_NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "96a53ebcf9916faf8904770864ffba158e491f12d56d63bbea65674cfb7e004e",
+        "463557705_NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-07-22-hh.png",
+        "values_f32": "colusa/2026-07-22-hh.f32"
+      },
+      "checksums": {
+        "map_png": "e9345662153824073bc4dba0c3e6c7c81d4ad8734c48db867661333ef671fd3a",
+        "values_f32": "4d1bf6272e1c501e1ea39b8f6826553ac244cddefd582da84d185d2b806e9492"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-08-27",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-08-27",
+      "granule_id": "G4291604586-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260827T130930",
+      "acquisition_end_utc": "20260827T131005",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4291604586-ASF",
+      "source_checksums": {
+        "463557850_NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "7475ffba299d46bfeb47135ba9645fbab0efdb9a963edb076b9a70f82b3ad315",
+        "463558641_NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-08-27-hh.png",
+        "values_f32": "colusa/2026-08-27-hh.f32"
+      },
+      "checksums": {
+        "map_png": "32f8c7c169a6d5581a702fdd9e7ff025716405f8018969edb339a9ff1cc5640f",
+        "values_f32": "3d040797c5557a8dffd50d66e9581a5da2b5d7e2344a455e9f7fb70feb8f4841"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-10-14",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "polarization": "HH",
+      "units": "dB",
+      "utc_date": "2026-10-14",
+      "granule_id": "G4370164371-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001",
+      "acquisition_start_utc": "20261014T130930",
+      "acquisition_end_utc": "20261014T131005",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4370164371-ASF",
+      "source_checksums": {
+        "463559277_NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif": "3f77567d454d7fbf7e784c9d9730f74bf986cfcd49da155b1b01708ab2455f12",
+        "463559955_NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-10-14-hh.png",
+        "values_f32": "colusa/2026-10-14-hh.f32"
+      },
+      "checksums": {
+        "map_png": "089d63ff156ac5298fd6861215ead6a79681e7ead950236e93fba53981312d8a",
+        "values_f32": "685afc6b968868f8313af9a87d33eb89566b96b3d2ff57f8d4963e6ee6133549"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-06-04",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-06-04",
+      "granule_id": "G4275305452-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260604T130934",
+      "acquisition_end_utc": "20260604T131009",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4275305452-ASF",
+      "source_checksums": {
+        "463554060_NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "f5d7636ef8c05d51e7f09df52b1e9b8cb8d074141f89758899ea2c8eafba7e07",
+        "463555116_NISAR_L2_PR_GCOV_022_034_A_021_4005_DHDH_A_20260604T130934_20260604T131009_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-06-04-hv.png",
+        "values_f32": "colusa/2026-06-04-hv.f32"
+      },
+      "checksums": {
+        "map_png": "d9365f8c7058490d48031e778c0df06c0d97695679e0e30591df7fc99595ae7b",
+        "values_f32": "839bf3735cb4a6b9e2af716252fe7db232f16089b6518f1ad8af224f682c937c"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-07-22",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-07-22",
+      "granule_id": "G4260071943-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260722T130932",
+      "acquisition_end_utc": "20260722T131006",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4260071943-ASF",
+      "source_checksums": {
+        "463555747_NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "fe567b900fdd54243e164527bffcc9be576e495c866fc8b796055f84e0762a55",
+        "463557705_NISAR_L2_PR_GCOV_026_034_A_021_4005_DHDH_A_20260722T130932_20260722T131006_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-07-22-hv.png",
+        "values_f32": "colusa/2026-07-22-hv.f32"
+      },
+      "checksums": {
+        "map_png": "bcfd2e5b945e8046060dc83cc2bc224db0fb091352ccbb5049d4d7d4b8077ee8",
+        "values_f32": "2ad06c5968dce82fdb42cab1ec638ed053137518fd7693cd766a64bdaf3b5382"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-08-27",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-08-27",
+      "granule_id": "G4291604586-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001",
+      "acquisition_start_utc": "20260827T130930",
+      "acquisition_end_utc": "20260827T131005",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4291604586-ASF",
+      "source_checksums": {
+        "463557872_NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "572e7bdf19ae4f260a0c0d3cf1b58ad0520028541ae5f96455f2bebfca53e1fd",
+        "463558641_NISAR_L2_PR_GCOV_029_034_A_021_4005_DHDH_A_20260827T130930_20260827T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-08-27-hv.png",
+        "values_f32": "colusa/2026-08-27-hv.f32"
+      },
+      "checksums": {
+        "map_png": "e84d861ca22572b47f214171213144c48e5747b7ddccaa4857cc6d5f4d0019a5",
+        "values_f32": "e4380e4dfbd98c25c47ad820be9dbb2c5a80bda4a5c043fe1515c986e8790f79"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-10-14",
+      "region_id": "colusa",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "polarization": "HV",
+      "units": "dB",
+      "utc_date": "2026-10-14",
+      "granule_id": "G4370164371-ASF",
+      "full_granule_name": "NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001",
+      "acquisition_start_utc": "20261014T130930",
+      "acquisition_end_utc": "20261014T131005",
+      "source_record": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?granule_ur=G4370164371-ASF",
+      "source_checksums": {
+        "463559953_NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HVHV_subsetted.tif": "3a8f2da40020c8e47c9f5250c4f0ee8667d503396aa64842ee44afa7566e6d98",
+        "463559955_NISAR_L2_PR_GCOV_033_034_A_021_4005_DHDH_A_20261014T130930_20261014T131005_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_mask_subsetted.tif": "88ff0f5358d766224d5f30ab2591e2ddf5349d937317d273e4a7bf4983c86013"
+      },
+      "assets": {
+        "map_png": "colusa/2026-10-14-hv.png",
+        "values_f32": "colusa/2026-10-14-hv.f32"
+      },
+      "checksums": {
+        "map_png": "862a5fddec8721cddc5b731ea00b7a6ffb36306cded188309524d7e93ff0660e",
+        "values_f32": "11c317699e3017f9136ab334f23a72099549107d4c55082de9f01b15f47bb4b4"
+      },
+      "valid_cells": 216814,
+      "coverage": 0.9971669042910362
+    }
+  ],
+  "pairs": [
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-06-04",
+      "later_date": "2026-07-22",
+      "units": "dB",
+      "map_png": "colusa/2026-06-04-2026-07-22-hh-difference.png",
+      "map_sha256": "c9900c4d36eb48abef8d6b5229b4f38647c1072aff06c2c376be54ca06fd1623",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": 0.7773756749494138,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 70903,
+                "km2": 63.8127,
+                "percent": 32.70222402612377
+              },
+              "decrease": {
+                "cells": 14305,
+                "km2": 12.8745,
+                "percent": 6.597821173909434
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 54233,
+                "km2": 48.8097,
+                "percent": 25.01360613244532
+              },
+              "decrease": {
+                "cells": 6309,
+                "km2": 5.6781,
+                "percent": 2.9098674439842447
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 42503,
+                "km2": 38.2527,
+                "percent": 19.60343889232245
+              },
+              "decrease": {
+                "cells": 2992,
+                "km2": 2.6928,
+                "percent": 1.3799846873356887
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 4.972216970981642,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 32130,
+                "km2": 28.916999999999998,
+                "percent": 78.57666911225239
+              },
+              "decrease": {
+                "cells": 1206,
+                "km2": 1.0854,
+                "percent": 2.9493763756419664
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 29066,
+                "km2": 26.159399999999998,
+                "percent": 71.08339447297628
+              },
+              "decrease": {
+                "cells": 458,
+                "km2": 0.4122,
+                "percent": 1.120078258742969
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 25062,
+                "km2": 22.555799999999998,
+                "percent": 61.291269258987526
+              },
+              "decrease": {
+                "cells": 149,
+                "km2": 0.1341,
+                "percent": 0.3643922719491318
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-06-04",
+      "later_date": "2026-08-27",
+      "units": "dB",
+      "map_png": "colusa/2026-06-04-2026-08-27-hh-difference.png",
+      "map_sha256": "b110a3a27bb6b44ea973beca441624792e0974af7417d59e8452c206e032c87f",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": 0.7909797732454948,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 75366,
+                "km2": 67.82939999999999,
+                "percent": 34.76067043641093
+              },
+              "decrease": {
+                "cells": 28917,
+                "km2": 26.025299999999998,
+                "percent": 13.337238370215946
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 60655,
+                "km2": 54.5895,
+                "percent": 27.975591982067577
+              },
+              "decrease": {
+                "cells": 19204,
+                "km2": 17.2836,
+                "percent": 8.857361609490162
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 51769,
+                "km2": 46.5921,
+                "percent": 23.87714815463946
+              },
+              "decrease": {
+                "cells": 14276,
+                "km2": 12.8484,
+                "percent": 6.58444565387844
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 7.881786627077089,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 34333,
+                "km2": 30.8997,
+                "percent": 83.96429444852042
+              },
+              "decrease": {
+                "cells": 1030,
+                "km2": 0.9269999999999999,
+                "percent": 2.5189532893127904
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 33495,
+                "km2": 30.1455,
+                "percent": 81.91489361702128
+              },
+              "decrease": {
+                "cells": 393,
+                "km2": 0.3537,
+                "percent": 0.9611151870873074
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 32392,
+                "km2": 29.1528,
+                "percent": 79.21741257031059
+              },
+              "decrease": {
+                "cells": 169,
+                "km2": 0.15209999999999999,
+                "percent": 0.41330398630472
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-06-04",
+      "later_date": "2026-10-14",
+      "units": "dB",
+      "map_png": "colusa/2026-06-04-2026-10-14-hh-difference.png",
+      "map_sha256": "ba49d2f78188f13bc6172043460f7bc99f15a199e083d61cc8ed9c2c04c56db3",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": -0.12410534348145585,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 48259,
+                "km2": 43.433099999999996,
+                "percent": 22.258249006060495
+              },
+              "decrease": {
+                "cells": 48991,
+                "km2": 44.091899999999995,
+                "percent": 22.595865580635937
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 35530,
+                "km2": 31.977,
+                "percent": 16.387318162111303
+              },
+              "decrease": {
+                "cells": 31597,
+                "km2": 28.4373,
+                "percent": 14.573320911011281
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 26478,
+                "km2": 23.830199999999998,
+                "percent": 12.212311013126458
+              },
+              "decrease": {
+                "cells": 21230,
+                "km2": 19.107,
+                "percent": 9.791803112345145
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 3.385257687511885,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 26809,
+                "km2": 24.1281,
+                "percent": 65.56370750794815
+              },
+              "decrease": {
+                "cells": 1885,
+                "km2": 1.6965,
+                "percent": 4.609929078014185
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 22320,
+                "km2": 20.088,
+                "percent": 54.58547322083639
+              },
+              "decrease": {
+                "cells": 719,
+                "km2": 0.6471,
+                "percent": 1.7583761310833945
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 17380,
+                "km2": 15.642,
+                "percent": 42.50427977500611
+              },
+              "decrease": {
+                "cells": 233,
+                "km2": 0.2097,
+                "percent": 0.5698214722426022
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-07-22",
+      "later_date": "2026-08-27",
+      "units": "dB",
+      "map_png": "colusa/2026-07-22-2026-08-27-hh-difference.png",
+      "map_sha256": "1423f01f3ea0629ac20611fa51172384c89c29293668724a459e2c074f3206e4",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": 0.3254288376050183,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 43505,
+                "km2": 39.1545,
+                "percent": 20.065586170634738
+              },
+              "decrease": {
+                "cells": 29433,
+                "km2": 26.4897,
+                "percent": 13.575230381801914
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 25792,
+                "km2": 23.212799999999998,
+                "percent": 11.895910780669144
+              },
+              "decrease": {
+                "cells": 20089,
+                "km2": 18.080099999999998,
+                "percent": 9.265545582849816
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 14440,
+                "km2": 12.996,
+                "percent": 6.660086525777856
+              },
+              "decrease": {
+                "cells": 15763,
+                "km2": 14.1867,
+                "percent": 7.270286974088389
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 2.3737530554790043,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 23065,
+                "km2": 20.758499999999998,
+                "percent": 56.40743458058205
+              },
+              "decrease": {
+                "cells": 526,
+                "km2": 0.4734,
+                "percent": 1.2863780875519688
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 15935,
+                "km2": 14.3415,
+                "percent": 38.97040841281487
+              },
+              "decrease": {
+                "cells": 151,
+                "km2": 0.1359,
+                "percent": 0.36928344338469066
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 9170,
+                "km2": 8.253,
+                "percent": 22.426021032037173
+              },
+              "decrease": {
+                "cells": 35,
+                "km2": 0.0315,
+                "percent": 0.08559550012227929
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-07-22",
+      "later_date": "2026-10-14",
+      "units": "dB",
+      "map_png": "colusa/2026-07-22-2026-10-14-hh-difference.png",
+      "map_sha256": "4e398a2d0fe3faedee1e439dbe41532ec263049d3b210820a4a304a605620fb7",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": -0.902260369474091,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 16707,
+                "km2": 15.036299999999999,
+                "percent": 7.705683212338687
+              },
+              "decrease": {
+                "cells": 72426,
+                "km2": 65.18339999999999,
+                "percent": 33.4046694401653
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 8242,
+                "km2": 7.4178,
+                "percent": 3.8014150377743134
+              },
+              "decrease": {
+                "cells": 51625,
+                "km2": 46.4625,
+                "percent": 23.810731779313144
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 4098,
+                "km2": 3.6881999999999997,
+                "percent": 1.8900993478280923
+              },
+              "decrease": {
+                "cells": 38501,
+                "km2": 34.6509,
+                "percent": 17.757617128045236
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": -0.9250999743530919,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 4718,
+                "km2": 4.2462,
+                "percent": 11.538273416483248
+              },
+              "decrease": {
+                "cells": 14671,
+                "km2": 13.203899999999999,
+                "percent": 35.8791880655417
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 2525,
+                "km2": 2.2725,
+                "percent": 6.175103937393006
+              },
+              "decrease": {
+                "cells": 10656,
+                "km2": 9.590399999999999,
+                "percent": 26.060161408657372
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1239,
+                "km2": 1.1151,
+                "percent": 3.030080704328687
+              },
+              "decrease": {
+                "cells": 7506,
+                "km2": 6.7554,
+                "percent": 18.356566397652237
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HH",
+      "earlier_date": "2026-08-27",
+      "later_date": "2026-10-14",
+      "units": "dB",
+      "map_png": "colusa/2026-08-27-2026-10-14-hh-difference.png",
+      "map_sha256": "381592338385b42a1f51e19118c883e4e1794850ed964ad95534bb986eb710a3",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": -0.9797223392021746,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 10462,
+                "km2": 9.415799999999999,
+                "percent": 4.825334157388361
+              },
+              "decrease": {
+                "cells": 72749,
+                "km2": 65.47409999999999,
+                "percent": 33.55364505982086
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 5227,
+                "km2": 4.7043,
+                "percent": 2.4108221793795606
+              },
+              "decrease": {
+                "cells": 51896,
+                "km2": 46.7064,
+                "percent": 23.935723707878644
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 2893,
+                "km2": 2.6037,
+                "percent": 1.334323429298846
+              },
+              "decrease": {
+                "cells": 37722,
+                "km2": 33.949799999999996,
+                "percent": 17.39832298652301
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": -3.4809764484915506,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 919,
+                "km2": 0.8271,
+                "percent": 2.247493274639276
+              },
+              "decrease": {
+                "cells": 26953,
+                "km2": 24.2577,
+                "percent": 65.9158718513084
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 519,
+                "km2": 0.46709999999999996,
+                "percent": 1.2692589875275129
+              },
+              "decrease": {
+                "cells": 22580,
+                "km2": 20.322,
+                "percent": 55.221325507459035
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 315,
+                "km2": 0.2835,
+                "percent": 0.7703595011005135
+              },
+              "decrease": {
+                "cells": 18095,
+                "km2": 16.2855,
+                "percent": 44.252873563218394
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-06-04",
+      "later_date": "2026-07-22",
+      "units": "dB",
+      "map_png": "colusa/2026-06-04-2026-07-22-hv-difference.png",
+      "map_sha256": "c9b0d15fde0069abd5e5680f120efb930086b93b10381356faf45ae0a38c8313",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": 0.2228800016883099,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 27956,
+                "km2": 25.1604,
+                "percent": 12.894001309878513
+              },
+              "decrease": {
+                "cells": 13515,
+                "km2": 12.163499999999999,
+                "percent": 6.233453559272003
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 14237,
+                "km2": 12.8133,
+                "percent": 6.5664578855608955
+              },
+              "decrease": {
+                "cells": 4691,
+                "km2": 4.2219,
+                "percent": 2.163605671220493
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 9321,
+                "km2": 8.3889,
+                "percent": 4.299076627893033
+              },
+              "decrease": {
+                "cells": 1954,
+                "km2": 1.7586,
+                "percent": 0.9012333151918234
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 0.540393295611123,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 4958,
+                "km2": 4.4622,
+                "percent": 12.125213988750305
+              },
+              "decrease": {
+                "cells": 1316,
+                "km2": 1.1844,
+                "percent": 3.218390804597701
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 1317,
+                "km2": 1.1853,
+                "percent": 3.2208363903154806
+              },
+              "decrease": {
+                "cells": 336,
+                "km2": 0.3024,
+                "percent": 0.8217168011738811
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 465,
+                "km2": 0.4185,
+                "percent": 1.137197358767425
+              },
+              "decrease": {
+                "cells": 76,
+                "km2": 0.0684,
+                "percent": 0.185864514551235
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-06-04",
+      "later_date": "2026-08-27",
+      "units": "dB",
+      "map_png": "colusa/2026-06-04-2026-08-27-hv-difference.png",
+      "map_sha256": "086315c2d4b7456a3fd50824fbbbdedf5151f478d0c548423441e8232c85a734",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": 0.3742142507264479,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 49144,
+                "km2": 44.2296,
+                "percent": 22.666432979420147
+              },
+              "decrease": {
+                "cells": 28523,
+                "km2": 25.6707,
+                "percent": 13.155515787725886
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 28818,
+                "km2": 25.9362,
+                "percent": 13.291577112179104
+              },
+              "decrease": {
+                "cells": 18243,
+                "km2": 16.4187,
+                "percent": 8.41412454915273
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 16818,
+                "km2": 15.136199999999999,
+                "percent": 7.756879168319389
+              },
+              "decrease": {
+                "cells": 14200,
+                "km2": 12.78,
+                "percent": 6.549392566900662
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 2.391830323765399,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 23749,
+                "km2": 21.3741,
+                "percent": 58.08021521154316
+              },
+              "decrease": {
+                "cells": 1082,
+                "km2": 0.9738,
+                "percent": 2.6461237466373198
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 15320,
+                "km2": 13.788,
+                "percent": 37.46637319638053
+              },
+              "decrease": {
+                "cells": 399,
+                "km2": 0.3591,
+                "percent": 0.9757887013939839
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 8540,
+                "km2": 7.686,
+                "percent": 20.885302029836147
+              },
+              "decrease": {
+                "cells": 135,
+                "km2": 0.1215,
+                "percent": 0.3301540719002201
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-06-04",
+      "later_date": "2026-10-14",
+      "units": "dB",
+      "map_png": "colusa/2026-06-04-2026-10-14-hv-difference.png",
+      "map_sha256": "2270c1947011c15779eb4b376bef1c5c4ce3394a8ff71145faad2023868c81b3",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": -0.2495704327861583,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 34943,
+                "km2": 31.4487,
+                "percent": 16.11657918769083
+              },
+              "decrease": {
+                "cells": 46811,
+                "km2": 42.1299,
+                "percent": 21.59039545416809
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 21005,
+                "km2": 18.9045,
+                "percent": 9.688027525897773
+              },
+              "decrease": {
+                "cells": 31015,
+                "km2": 27.9135,
+                "percent": 14.304888060734086
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 12018,
+                "km2": 10.8162,
+                "percent": 5.542999990775503
+              },
+              "decrease": {
+                "cells": 22962,
+                "km2": 20.6658,
+                "percent": 10.590644515575562
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 2.0537566802085507,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 20806,
+                "km2": 18.7254,
+                "percent": 50.88285644411837
+              },
+              "decrease": {
+                "cells": 1624,
+                "km2": 1.4616,
+                "percent": 3.971631205673759
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 14088,
+                "km2": 12.6792,
+                "percent": 34.4534115920763
+              },
+              "decrease": {
+                "cells": 518,
+                "km2": 0.4662,
+                "percent": 1.2668134018097335
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 8068,
+                "km2": 7.2612,
+                "percent": 19.730985571044265
+              },
+              "decrease": {
+                "cells": 138,
+                "km2": 0.12419999999999999,
+                "percent": 0.3374908290535583
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-07-22",
+      "later_date": "2026-08-27",
+      "units": "dB",
+      "map_png": "colusa/2026-07-22-2026-08-27-hv-difference.png",
+      "map_sha256": "e499b92c7dfef33294a00a5a9d2fd352b2904fbd0e87cdbee5d91b3e1cc601ca",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": 0.1484934784788381,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 31720,
+                "km2": 28.548,
+                "percent": 14.630051564935844
+              },
+              "decrease": {
+                "cells": 28744,
+                "km2": 25.8696,
+                "percent": 13.257446474858634
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 15223,
+                "km2": 13.7007,
+                "percent": 7.021225566614702
+              },
+              "decrease": {
+                "cells": 19387,
+                "km2": 17.4483,
+                "percent": 8.941765753134023
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 7427,
+                "km2": 6.6842999999999995,
+                "percent": 3.425516802420508
+              },
+              "decrease": {
+                "cells": 15795,
+                "km2": 14.2155,
+                "percent": 7.285046168605349
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 1.7202173342152722,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 17853,
+                "km2": 16.0677,
+                "percent": 43.66104181951577
+              },
+              "decrease": {
+                "cells": 415,
+                "km2": 0.3735,
+                "percent": 1.0149180728784544
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 9773,
+                "km2": 8.7957,
+                "percent": 23.900709219858157
+              },
+              "decrease": {
+                "cells": 84,
+                "km2": 0.0756,
+                "percent": 0.20542920029347028
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 4776,
+                "km2": 4.2984,
+                "percent": 11.680117388114454
+              },
+              "decrease": {
+                "cells": 21,
+                "km2": 0.0189,
+                "percent": 0.05135730007336757
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-07-22",
+      "later_date": "2026-10-14",
+      "units": "dB",
+      "map_png": "colusa/2026-07-22-2026-10-14-hv-difference.png",
+      "map_sha256": "7c470e5803dcb710ee13f7309f2d23d40cb0b2d3ff60f678bfa362aa9f56b337",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": -0.41229758151175666,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 26630,
+                "km2": 23.967,
+                "percent": 12.282417187082014
+              },
+              "decrease": {
+                "cells": 52119,
+                "km2": 46.9071,
+                "percent": 24.038576844668704
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 14242,
+                "km2": 12.8178,
+                "percent": 6.568764009704171
+              },
+              "decrease": {
+                "cells": 37539,
+                "km2": 33.7851,
+                "percent": 17.31391884287915
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 7305,
+                "km2": 6.5745,
+                "percent": 3.3692473733246007
+              },
+              "decrease": {
+                "cells": 30456,
+                "km2": 27.4104,
+                "percent": 14.047063381515954
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": 1.4144473175150498,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 16107,
+                "km2": 14.4963,
+                "percent": 39.39104915627293
+              },
+              "decrease": {
+                "cells": 1500,
+                "km2": 1.3499999999999999,
+                "percent": 3.668378576669112
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 9629,
+                "km2": 8.6661,
+                "percent": 23.54854487649792
+              },
+              "decrease": {
+                "cells": 512,
+                "km2": 0.4608,
+                "percent": 1.252139887503057
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 5021,
+                "km2": 4.5188999999999995,
+                "percent": 12.279285888970408
+              },
+              "decrease": {
+                "cells": 196,
+                "km2": 0.1764,
+                "percent": 0.47933480068476403
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "polarization": "HV",
+      "earlier_date": "2026-08-27",
+      "later_date": "2026-10-14",
+      "units": "dB",
+      "map_png": "colusa/2026-08-27-2026-10-14-hv-difference.png",
+      "map_sha256": "533506317e027f5c20097c25324fe4b586c0ccde69fc11ba235be0c9587a35da",
+      "valid_pair_cells": 216814,
+      "valid_pair_area_km2": 195.1326,
+      "summary": {
+        "All AOI": {
+          "valid_cells": 216814,
+          "valid_area_km2": 195.1326,
+          "coverage": 0.9971669042910362,
+          "median_db": -0.4761594217605314,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 12511,
+                "km2": 11.2599,
+                "percent": 5.770383831302406
+              },
+              "decrease": {
+                "cells": 42957,
+                "km2": 38.6613,
+                "percent": 19.81283496453181
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 4863,
+                "km2": 4.3767,
+                "percent": 2.2429363417491492
+              },
+              "decrease": {
+                "cells": 25781,
+                "km2": 23.2029,
+                "percent": 11.89083730755394
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 1809,
+                "km2": 1.6280999999999999,
+                "percent": 0.8343557150368519
+              },
+              "decrease": {
+                "cells": 17186,
+                "km2": 15.4674,
+                "percent": 7.92660990526442
+              }
+            }
+          }
+        },
+        "2025 CDL rice reference": {
+          "valid_cells": 40890,
+          "valid_area_km2": 36.801,
+          "coverage": 0.9972927489573425,
+          "median_db": -0.25373010293531273,
+          "thresholds_db": {
+            "2": {
+              "increase": {
+                "cells": 5228,
+                "km2": 4.7052,
+                "percent": 12.785522132550746
+              },
+              "decrease": {
+                "cells": 7913,
+                "km2": 7.1217,
+                "percent": 19.351919784788457
+              }
+            },
+            "3": {
+              "increase": {
+                "cells": 2444,
+                "km2": 2.1995999999999998,
+                "percent": 5.977011494252873
+              },
+              "decrease": {
+                "cells": 4137,
+                "km2": 3.7233,
+                "percent": 10.117388114453412
+              }
+            },
+            "4": {
+              "increase": {
+                "cells": 924,
+                "km2": 0.8316,
+                "percent": 2.2597212032281733
+              },
+              "decrease": {
+                "cells": 2112,
+                "km2": 1.9008,
+                "percent": 5.16507703595011
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "chart_rows": [
+    {
+      "date": "2026-06-04",
+      "polarization": "HH",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -17.544463176810865
+    },
+    {
+      "date": "2026-07-22",
+      "polarization": "HH",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -12.304397060734798
+    },
+    {
+      "date": "2026-08-27",
+      "polarization": "HH",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -9.561266368214827
+    },
+    {
+      "date": "2026-10-14",
+      "polarization": "HH",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -13.546204547389578
+    },
+    {
+      "date": "2026-06-04",
+      "polarization": "HV",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -21.96415754134859
+    },
+    {
+      "date": "2026-07-22",
+      "polarization": "HV",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -21.359552738934426
+    },
+    {
+      "date": "2026-08-27",
+      "polarization": "HV",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -19.593799092186075
+    },
+    {
+      "date": "2026-10-14",
+      "polarization": "HV",
+      "class": "2025 CDL rice reference",
+      "valid_cells": 40890,
+      "area_km2": 36.801,
+      "coverage": 0.9972927489573425,
+      "median_db": -19.82810409948882
+    }
+  ],
+  "contexts": {
+    "2025 CDL rice reference": {
+      "source": "https://pdi.scinet.usda.gov/image/rest/services/CDL_WM/ImageServer",
+      "asset": "colusa/cdl-2025-rice.png",
+      "year": 2025,
+      "class": 3,
+      "source_file_sha256": "00ecdf442e22046def030cd69e7a31335f236490021e1fded2e4342199fabc09",
+      "display_sha256": "950f0b560d4c54f407acdcebb9f3ee1840d78d3c02fad5482a575325b702e763"
+    }
+  },
+  "provenance": {
+    "collection": "C2854338529-ASF",
+    "product": "NISAR_L2_GCOV_PROVISIONAL_V1",
+    "crid": "P05023",
+    "mask_codes_accepted": [
+      1
+    ],
+    "withheld_dates": {},
+    "aggregation": "mean valid linear gamma-zero power, then 10 log10",
+    "minimum_source_cells": 8,
+    "source_qa": "data/cache/phase-2a/qa.json"
+  }
+}

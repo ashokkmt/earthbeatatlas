@@ -1,0 +1,357 @@
+{
+  "release_id": "nisar-pilot-20261114-v1",
+  "observations": [
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-10-14",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-10-14",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-10-14",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-10-14",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-09-25",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-09-25",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-09-25",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-09-25",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-08-27",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-08-27",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-08-27",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-08-27",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-08-20",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-08-20",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-08-20",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-08-20",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-07-22",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-07-22",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-07-22",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-07-22",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-07-15",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-07-15",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-07-15",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-07-15",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hh-backscatter:2026-06-21",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-06-21",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "barataria:nisar-gcov:hv-backscatter:2026-06-21",
+      "region_id": "barataria",
+      "region": "Barataria Basin near Lake Salvador, Louisiana",
+      "aliases": [
+        "Barataria Basin",
+        "Lake Salvador",
+        "Louisiana wetlands"
+      ],
+      "title": "Barataria Basin wetlands",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-06-21",
+      "manifest": "releases/nisar-pilot-20261114-v1/barataria/manifest.json"
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hh-backscatter:2026-06-10",
+      "region_id": "santa-rosa",
+      "region": "Santa Rosa Island, California",
+      "aliases": [
+        "Santa Rosa Island",
+        "Channel Islands",
+        "California wildfire"
+      ],
+      "title": "Santa Rosa Island wildfire context",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-06-10",
+      "manifest": "releases/nisar-pilot-20261114-v1/santa-rosa/manifest.json"
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hv-backscatter:2026-06-10",
+      "region_id": "santa-rosa",
+      "region": "Santa Rosa Island, California",
+      "aliases": [
+        "Santa Rosa Island",
+        "Channel Islands",
+        "California wildfire"
+      ],
+      "title": "Santa Rosa Island wildfire context",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-06-10",
+      "manifest": "releases/nisar-pilot-20261114-v1/santa-rosa/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hh-backscatter:2026-06-04",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-06-04",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "colusa:nisar-gcov:hv-backscatter:2026-06-04",
+      "region_id": "colusa",
+      "region": "Sacramento Valley near Colusa, California",
+      "aliases": [
+        "Colusa",
+        "Sacramento Valley",
+        "California rice"
+      ],
+      "title": "Sacramento Valley rice fields",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-06-04",
+      "manifest": "releases/nisar-pilot-20261114-v1/colusa/manifest.json"
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hh-backscatter:2026-05-29",
+      "region_id": "santa-rosa",
+      "region": "Santa Rosa Island, California",
+      "aliases": [
+        "Santa Rosa Island",
+        "Channel Islands",
+        "California wildfire"
+      ],
+      "title": "Santa Rosa Island wildfire context",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-05-29",
+      "manifest": "releases/nisar-pilot-20261114-v1/santa-rosa/manifest.json"
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hv-backscatter:2026-05-29",
+      "region_id": "santa-rosa",
+      "region": "Santa Rosa Island, California",
+      "aliases": [
+        "Santa Rosa Island",
+        "Channel Islands",
+        "California wildfire"
+      ],
+      "title": "Santa Rosa Island wildfire context",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-05-29",
+      "manifest": "releases/nisar-pilot-20261114-v1/santa-rosa/manifest.json"
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hh-backscatter:2026-05-05",
+      "region_id": "santa-rosa",
+      "region": "Santa Rosa Island, California",
+      "aliases": [
+        "Santa Rosa Island",
+        "Channel Islands",
+        "California wildfire"
+      ],
+      "title": "Santa Rosa Island wildfire context",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hh-backscatter",
+      "units": "dB",
+      "utc_date": "2026-05-05",
+      "manifest": "releases/nisar-pilot-20261114-v1/santa-rosa/manifest.json"
+    },
+    {
+      "id": "santa-rosa:nisar-gcov:hv-backscatter:2026-05-05",
+      "region_id": "santa-rosa",
+      "region": "Santa Rosa Island, California",
+      "aliases": [
+        "Santa Rosa Island",
+        "Channel Islands",
+        "California wildfire"
+      ],
+      "title": "Santa Rosa Island wildfire context",
+      "dataset_id": "nisar-gcov",
+      "parameter": "hv-backscatter",
+      "units": "dB",
+      "utc_date": "2026-05-05",
+      "manifest": "releases/nisar-pilot-20261114-v1/santa-rosa/manifest.json"
+    }
+  ]
+}

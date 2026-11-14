@@ -1,0 +1,32 @@
+{
+  "name": "Barataria",
+  "slug": "barataria",
+  "full_name": "Barataria Basin near Lake Salvador, Louisiana",
+  "title": "Barataria Basin wetlands",
+  "bounds_wgs84": [
+    -90.42,
+    29.7,
+    -90.24,
+    29.82
+  ],
+  "analysis_epsg": 32615,
+  "aliases": [
+    "Barataria Basin",
+    "Lake Salvador",
+    "Louisiana wetlands"
+  ],
+  "context_layers": [
+    {
+      "filename": "barataria-nwi-emergent.geojson",
+      "label": "Freshwater emergent wetlands",
+      "source": "https://fwspublicservices.wim.usgs.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0",
+      "features": 82
+    },
+    {
+      "filename": "barataria-nwi-forested-shrub.geojson",
+      "label": "Freshwater forested/shrub wetlands",
+      "source": "https://fwspublicservices.wim.usgs.gov/wetlandsmapservice/rest/services/Wetlands/MapServer/0",
+      "features": 268
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_id": "nisar-gcov",
+  "product_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "collection_concept_id": "C2854338529-ASF",
+  "collection_version": "1",
+  "maturity": "PROVISIONAL",
+  "crid": "P05023",
+  "product_version": "1.0.11",
+  "frequency_band": "L",
+  "frequency": "A",
+  "instrument_mode_code": "4005",
+  "channels": {
+    "HH": "HHHH",
+    "HV": "HVHV"
+  },
+  "mask_codes_accepted_for_pilot": [
+    1
+  ],
+  "input_units": "linear gamma-zero power",
+  "display_units": "dB",
+  "aggregation": "mean valid linear power, then 10 log10"
+}

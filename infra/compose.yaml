@@ -1,0 +1,63 @@
+services:
+  db:
+    image: ghcr.io/stac-utils/pgstac:v0.10.0
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-username}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      POSTGRES_DB: ${POSTGRES_DB:-postgis}
+      PGUSER: ${POSTGRES_USER:-username}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-password}
+      PGDATABASE: ${POSTGRES_DB:-postgis}
+    ports: ["127.0.0.1:5439:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h /var/run/postgresql -U $${PGUSER} -d $${PGDATABASE}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  stac-api:
+    image: ghcr.io/stac-utils/stac-fastapi-pgstac:7.2.0
+    environment:
+      PGHOST: db
+      PGPORT: 5432
+      PGUSER: ${POSTGRES_USER:-username}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-password}
+      PGDATABASE: ${POSTGRES_DB:-postgis}
+      STAC_FASTAPI_TITLE: NISAR Explorer Catalog
+      STAC_FASTAPI_DESCRIPTION: Public NISAR archive metadata and prepared pilot assets
+      STAC_FASTAPI_VERSION: 0.1.0
+    ports: ["127.0.0.1:8080:8080"]
+    depends_on:
+      db: {condition: service_healthy}
+
+  project-api:
+    build: ..
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-username}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-postgis}
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      db: {condition: service_healthy}
+      bootstrap: {condition: service_completed_successfully}
+
+  bootstrap:
+    build: ..
+    command: ["sh", "-c", "python scripts/migrate_catalog.py && python scripts/import_catalog_seed.py"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-username}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-postgis}
+    depends_on:
+      db: {condition: service_healthy}
+    restart: "no"
+
+  catalog-sync:
+    build: ..
+    command: ["python", "-m", "nasa_explorer.catalog.sync"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-username}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-postgis}
+    depends_on:
+      db: {condition: service_healthy}
+      bootstrap: {condition: service_completed_successfully}
+    restart: unless-stopped
+
+volumes:
+  pgdata:
