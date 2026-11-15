@@ -1,0 +1,291 @@
+{
+  "scope": "metadata and checksums for AOI-subsetted Harmony COGs in ignored local cache; sample pixels are not retained in Git",
+  "samples": [
+    {
+      "product_id": "nisar-gunw",
+      "source_granule_id": "G4385295827-ASF",
+      "region": "colusa",
+      "file_name": "466105285_NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_GUNW_grids_frequencyA_unwrappedInterferogram_HH_coherenceMagnitude_subsetted.tif",
+      "sha256": "efe60fc37827bd61ac2d45e9bc96a83c06e1269791ddda02c4143aa77eedd673",
+      "crs": "EPSG:32610",
+      "shape": [
+        168,
+        185
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 30567,
+      "valid_min": 0.0034490469843149185,
+      "valid_max": 0.9839334487915039,
+      "valid_median": 0.6673074960708618,
+      "producer": "NASA JPL",
+      "reference_document": "D-102272 NISAR NASA SDS Product Specification L2 Geocoded Unwrapped Interferogram"
+    },
+    {
+      "product_id": "nisar-gunw",
+      "source_granule_id": "G4385295827-ASF",
+      "region": "colusa",
+      "file_name": "466105285_NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_GUNW_grids_frequencyA_unwrappedInterferogram_HH_connectedComponents_subsetted.tif",
+      "sha256": "7e01edfc44189329899869b680c4ba5f6b2541f5f6b27d4467eaa58d5163ee2f",
+      "crs": "EPSG:32610",
+      "shape": [
+        168,
+        185
+      ],
+      "dtype": "uint16",
+      "nodata": 65535.0,
+      "valid_pixel_count": 30567,
+      "valid_min": 0.0,
+      "valid_max": 1.0,
+      "valid_median": 1.0,
+      "producer": "NASA JPL",
+      "reference_document": "D-102272 NISAR NASA SDS Product Specification L2 Geocoded Unwrapped Interferogram"
+    },
+    {
+      "product_id": "nisar-gunw",
+      "source_granule_id": "G4385295827-ASF",
+      "region": "colusa",
+      "file_name": "466105285_NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_GUNW_grids_frequencyA_unwrappedInterferogram_HH_ionospherePhaseScreenUncertainty_subsetted.tif",
+      "sha256": "8fb9e7c5ace68029cdade7d1f12262ce5949e3779833f4823f2d5acbffb495ad",
+      "crs": "EPSG:32610",
+      "shape": [
+        168,
+        185
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 30567,
+      "valid_min": 0.5697099566459656,
+      "valid_max": 0.9116569757461548,
+      "valid_median": 0.784997820854187,
+      "producer": "NASA JPL",
+      "reference_document": "D-102272 NISAR NASA SDS Product Specification L2 Geocoded Unwrapped Interferogram"
+    },
+    {
+      "product_id": "nisar-gunw",
+      "source_granule_id": "G4385295827-ASF",
+      "region": "colusa",
+      "file_name": "466105285_NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_GUNW_grids_frequencyA_unwrappedInterferogram_HH_ionospherePhaseScreen_subsetted.tif",
+      "sha256": "68bf2052b99441360b5a5f31cd70eab145ed2735ea731c6d9468d4cd48bc9176",
+      "crs": "EPSG:32610",
+      "shape": [
+        168,
+        185
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 30567,
+      "valid_min": 7.298611164093018,
+      "valid_max": 7.781923770904541,
+      "valid_median": 7.613207817077637,
+      "producer": "NASA JPL",
+      "reference_document": "D-102272 NISAR NASA SDS Product Specification L2 Geocoded Unwrapped Interferogram"
+    },
+    {
+      "product_id": "nisar-gunw",
+      "source_granule_id": "G4385295827-ASF",
+      "region": "colusa",
+      "file_name": "466105285_NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_GUNW_grids_frequencyA_unwrappedInterferogram_HH_unwrappedPhase_subsetted.tif",
+      "sha256": "a8b10364ec0d815190d3b1d65342200f60707d46e8c2773a67ed3f3c1717eab7",
+      "crs": "EPSG:32610",
+      "shape": [
+        168,
+        185
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 30567,
+      "valid_min": -3.8121087551116943,
+      "valid_max": 6.60770845413208,
+      "valid_median": 1.47896409034729,
+      "producer": "NASA JPL",
+      "reference_document": "D-102272 NISAR NASA SDS Product Specification L2 Geocoded Unwrapped Interferogram"
+    },
+    {
+      "product_id": "nisar-gunw",
+      "source_granule_id": "G4385295827-ASF",
+      "region": "colusa",
+      "file_name": "466105285_NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_GUNW_grids_frequencyA_unwrappedInterferogram_mask_subsetted.tif",
+      "sha256": "b54701a14fb8151597e6eb2995d8c31ea3548616b6e027a373e53c2ed1e5d352",
+      "crs": "EPSG:32610",
+      "shape": [
+        168,
+        185
+      ],
+      "dtype": "uint32",
+      "nodata": 255.0,
+      "valid_pixel_count": 30567,
+      "valid_min": 11.0,
+      "valid_max": 16777340.0,
+      "valid_median": 16777228.0,
+      "producer": "NASA JPL",
+      "reference_document": "D-102272 NISAR NASA SDS Product Specification L2 Geocoded Unwrapped Interferogram"
+    },
+    {
+      "product_id": "nisar-goff",
+      "source_granule_id": "G4273939392-ASF",
+      "region": "temporary-qa-aoi",
+      "file_name": "466107452_NISAR_L2_PR_GOFF_004_004_A_136_006_7700_SH_20251029T121824_20251029T121857_20251122T121825_20251122T121857_P05023_N_P_J_001_science_LSAR_GOFF_grids_frequencyA_pixelOffsets_HH_layer1_alongTrackOffset_subsetted.tif",
+      "sha256": "4550437f0b64dc4765d09f6acfb2354760c88465181594c1bb1aa98a237b9e56",
+      "crs": "EPSG:3031",
+      "shape": [
+        898,
+        1385
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 482353,
+      "valid_min": -140.96852111816406,
+      "valid_max": 131.96322631835938,
+      "valid_median": 0.4729887843132019,
+      "producer": "NASA JPL",
+      "reference_document": "D-105010 NISAR NASA SDS Product Specification L2 Geocoded Pixel Offsets"
+    },
+    {
+      "product_id": "nisar-goff",
+      "source_granule_id": "G4273939392-ASF",
+      "region": "temporary-qa-aoi",
+      "file_name": "466107452_NISAR_L2_PR_GOFF_004_004_A_136_006_7700_SH_20251029T121824_20251029T121857_20251122T121825_20251122T121857_P05023_N_P_J_001_science_LSAR_GOFF_grids_frequencyA_pixelOffsets_HH_layer1_slantRangeOffset_subsetted.tif",
+      "sha256": "4306d2ac0c180617e80924347dc8299bd6f3bd90038372dba3e8bed98af6e5c5",
+      "crs": "EPSG:3031",
+      "shape": [
+        898,
+        1385
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 482353,
+      "valid_min": -99.93083190917969,
+      "valid_max": 90.00994873046875,
+      "valid_median": -0.6099293231964111,
+      "producer": "NASA JPL",
+      "reference_document": "D-105010 NISAR NASA SDS Product Specification L2 Geocoded Pixel Offsets"
+    },
+    {
+      "product_id": "nisar-goff",
+      "source_granule_id": "G4273939392-ASF",
+      "region": "temporary-qa-aoi",
+      "file_name": "466107452_NISAR_L2_PR_GOFF_004_004_A_136_006_7700_SH_20251029T121824_20251029T121857_20251122T121825_20251122T121857_P05023_N_P_J_001_science_LSAR_GOFF_grids_frequencyA_pixelOffsets_HH_layer1_snr_subsetted.tif",
+      "sha256": "e5cc47f11467ea4e56c3a75b820b4c48137f84d612f6dceb9580d7389eedd8f6",
+      "crs": "EPSG:3031",
+      "shape": [
+        898,
+        1385
+      ],
+      "dtype": "float32",
+      "nodata": NaN,
+      "valid_pixel_count": 476657,
+      "valid_min": 3.696786642074585,
+      "valid_max": 498.6587829589844,
+      "valid_median": 93.8284683227539,
+      "producer": "NASA JPL",
+      "reference_document": "D-105010 NISAR NASA SDS Product Specification L2 Geocoded Pixel Offsets"
+    },
+    {
+      "product_id": "nisar-goff",
+      "source_granule_id": "G4273939392-ASF",
+      "region": "temporary-qa-aoi",
+      "file_name": "466107452_NISAR_L2_PR_GOFF_004_004_A_136_006_7700_SH_20251029T121824_20251029T121857_20251122T121825_20251122T121857_P05023_N_P_J_001_science_LSAR_GOFF_grids_frequencyA_pixelOffsets_mask_subsetted.tif",
+      "sha256": "3bf982557cca9c271db752f12010bf9b6dd515a6215be7323c27dd3895ab3d0a",
+      "crs": "EPSG:3031",
+      "shape": [
+        898,
+        1385
+      ],
+      "dtype": "uint32",
+      "nodata": 255.0,
+      "valid_pixel_count": 482353,
+      "valid_min": 10.0,
+      "valid_max": 131083.0,
+      "valid_median": 11.0,
+      "producer": "NASA JPL",
+      "reference_document": "D-105010 NISAR NASA SDS Product Specification L2 Geocoded Pixel Offsets"
+    },
+    {
+      "product_id": "nisar-sme2",
+      "source_granule_id": "G4385091449-ASF",
+      "region": "colusa",
+      "file_name": "466106441_NISAR_L3_PR_SME2_033_135_A_021_4005_DHDH_A_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_SME2_grids_retrievalQualityFlag_subsetted.tif",
+      "sha256": "65f2929cb14989f321c47db2e615cde396bd45845d84faee181cc246a66e53c1",
+      "crs": "EPSG:6933",
+      "shape": [
+        59,
+        81
+      ],
+      "dtype": "int16",
+      "nodata": -9999.0,
+      "valid_pixel_count": 4718,
+      "valid_min": 4.0,
+      "valid_max": 15.0,
+      "valid_median": 14.0,
+      "producer": "NASA JPL",
+      "reference_document": "D-107677 NISAR NASA SDS Product Specification Level-3 Soil Moisture"
+    },
+    {
+      "product_id": "nisar-sme2",
+      "source_granule_id": "G4385091449-ASF",
+      "region": "colusa",
+      "file_name": "466106441_NISAR_L3_PR_SME2_033_135_A_021_4005_DHDH_A_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_SME2_grids_soilMoistureUncertainty_subsetted.tif",
+      "sha256": "9dbbee328d8a321158b74bc3ceda135c5106758f8f1d2bf370994c5edfc3f2d9",
+      "crs": "EPSG:6933",
+      "shape": [
+        59,
+        81
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixel_count": 4718,
+      "valid_min": 0.016440432518720627,
+      "valid_max": 0.04565184563398361,
+      "valid_median": 0.030977554619312286,
+      "producer": "NASA JPL",
+      "reference_document": "D-107677 NISAR NASA SDS Product Specification Level-3 Soil Moisture"
+    },
+    {
+      "product_id": "nisar-sme2",
+      "source_granule_id": "G4385091449-ASF",
+      "region": "colusa",
+      "file_name": "466106441_NISAR_L3_PR_SME2_033_135_A_021_4005_DHDH_A_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_SME2_grids_soilMoisture_subsetted.tif",
+      "sha256": "78a1b46974e427de992124130ce2374f8179975e8bf5b5ab97a9d8b9c0e46530",
+      "crs": "EPSG:6933",
+      "shape": [
+        59,
+        81
+      ],
+      "dtype": "float32",
+      "nodata": -9999.0,
+      "valid_pixel_count": 4718,
+      "valid_min": 0.09073737263679504,
+      "valid_max": 0.37496742606163025,
+      "valid_median": 0.20723290741443634,
+      "producer": "NASA JPL",
+      "reference_document": "D-107677 NISAR NASA SDS Product Specification Level-3 Soil Moisture"
+    },
+    {
+      "product_id": "nisar-sme2",
+      "source_granule_id": "G4385091449-ASF",
+      "region": "colusa",
+      "file_name": "466106441_NISAR_L3_PR_SME2_033_135_A_021_4005_DHDH_A_20261021T131750_20261021T131824_P05023_N_F_J_001_science_LSAR_SME2_grids_surfaceQualityFlag_subsetted.tif",
+      "sha256": "28ca39a89b4946e35d629fc5cff77e2b05d9a70807649b1f55d61ed0b5a36281",
+      "crs": "EPSG:6933",
+      "shape": [
+        59,
+        81
+      ],
+      "dtype": "int16",
+      "nodata": -9999.0,
+      "valid_pixel_count": 4779,
+      "valid_min": 0.0,
+      "valid_max": 2305.0,
+      "valid_median": 0.0,
+      "producer": "NASA JPL",
+      "reference_document": "D-107677 NISAR NASA SDS Product Specification Level-3 Soil Moisture"
+    }
+  ],
+  "limitations": [
+    "GOFF layers are unfiltered offsets; units and mask encoding require source-spec QA before use.",
+    "GUNW mask values require specification review; phase is not displacement.",
+    "SME2 flags are preserved as raw categorical bitfields; observed higher surface flag bits need explanation.",
+    "These are single-granule schema samples, not dashboard-ready time series."
+  ]
+}

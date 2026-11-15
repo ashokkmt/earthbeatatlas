@@ -1,0 +1,23 @@
+{
+  "dataset_id": "nisar-gunw",
+  "product_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+  "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+  "collection_concept_id": "C2854335566-ASF",
+  "crid_per_granule": true,
+  "maturity": "PROVISIONAL",
+  "workflow_state": "source_raster_qa_required",
+  "harmony_capabilities_version": 3,
+  "harmony_paths_verified": true,
+  "source_guide": "https://nisar-docs.asf.alaska.edu/gunw/",
+  "harmony_guide": "https://nisar-docs.asf.alaska.edu/harmony/",
+  "parameters": {
+    "unwrapped_phase": {"unit": "radian", "harmony_variable": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/{polarization}/unwrappedPhase", "visualization": "diverging", "pair_required": true},
+    "coherence": {"unit": "unitless", "harmony_variable": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/{polarization}/coherenceMagnitude", "visualization": "sequential", "pair_required": true},
+    "connected_components": {"unit": "integer label", "harmony_variable": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/{polarization}/connectedComponents", "visualization": "categorical", "pair_required": true},
+    "valid_data_mask": {"unit": "categorical flag; values require product guide review", "harmony_variable": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/mask", "visualization": "categorical", "pair_required": true},
+    "ionosphere_phase_screen": {"unit": "radian", "harmony_variable": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/{polarization}/ionospherePhaseScreen", "visualization": "diverging", "pair_required": true},
+    "ionosphere_phase_uncertainty": {"unit": "radian", "harmony_variable": "/science/LSAR/GUNW/grids/frequencyA/unwrappedInterferogram/{polarization}/ionospherePhaseScreenUncertainty", "visualization": "sequential", "pair_required": true}
+  },
+  "quality_requirements": ["same_pair_identity", "connected_components_mask", "coherence_threshold_review", "native_grid_and_nodata", "crid_stratification"],
+  "disallowed_claims": ["displacement_without_wavelength_reference_and_corrections", "wind", "pressure"]
+}

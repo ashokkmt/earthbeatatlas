@@ -1,0 +1,11 @@
+{
+  "name": "Antarctica",
+  "slug": "antarctica-goff-qa",
+  "full_name": "Antarctic ice sheet sample area",
+  "title": "Antarctic ice sheet pixel-offset QA",
+  "bounds_wgs84": [-66.0, -83.0, -64.0, -82.0],
+  "analysis_epsg": 3031,
+  "aliases": ["Antarctic ice sheet", "GOFF ice motion QA"],
+  "context_layers": [],
+  "data_note": "A narrowly bounded QA area selected from the footprint of GOFF granule G4273939392-ASF; raw offsets remain provisional and unreviewed."
+}

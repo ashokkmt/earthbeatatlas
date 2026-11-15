@@ -69,6 +69,7 @@ def export_stac(release_dir: Path, catalog_path: Path, audit_path: Path, regions
                 "nisar:cmr_revision_id": source["cmr_revision_id"],
                 "nisar:cmr_revision_date": source["cmr_revision_date"],
                 "product": observation["dataset_id"], "parameter": observation["parameter"],
+                "nisar:visualization": "diverging" if observation["parameter"].endswith("difference") else "sequential",
                 "unit": observation["units"], "gsd": manifest["cell_size_m"],
                 "quality:state": "project_qa_screened",
                 "readiness:archive": "available", "readiness:visual": "ready",

@@ -1,0 +1,21 @@
+{
+  "dataset_id": "nisar-sme2",
+  "product_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+  "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+  "collection_concept_id": "C2854344945-ASF",
+  "crid_per_granule": true,
+  "maturity": "PROVISIONAL",
+  "workflow_state": "experimental_provisional",
+  "harmony_capabilities_version": 3,
+  "harmony_paths_verified": true,
+  "source_guide": "https://nisar-docs.asf.alaska.edu/sme2/",
+  "harmony_guide": "https://nisar-docs.asf.alaska.edu/harmony/",
+  "parameters": {
+    "soil_moisture": {"unit": "m3/m3", "harmony_variable": "/science/LSAR/SME2/grids/soilMoisture", "visualization": "sequential", "pair_required": false},
+    "soil_moisture_uncertainty": {"unit": "m3/m3", "harmony_variable": "/science/LSAR/SME2/grids/soilMoistureUncertainty", "visualization": "sequential", "pair_required": false},
+    "retrieval_quality_flag": {"unit": "bit field; NASA D-107677 Rev C: bit 0 recommended, bit 1 attempted, bit 2 successful, bit 3 in 0.02–0.60 range, bits 4–7 anomaly flags", "harmony_variable": "/science/LSAR/SME2/grids/retrievalQualityFlag", "visualization": "categorical", "pair_required": false},
+    "surface_quality_flag": {"unit": "bit field; NASA D-107677 Rev C: bits 0–7 water, urban, precipitation, snow/ice, permanent snow/ice, frozen ground, terrain, dense vegetation; observed higher bits remain undocumented", "harmony_variable": "/science/LSAR/SME2/grids/surfaceQualityFlag", "visualization": "categorical", "pair_required": false}
+  },
+  "quality_requirements": ["per_pixel_quality_flags", "algorithm_variant", "scale_offset_and_units", "valid_retrieval_support", "crid_stratification"],
+  "disallowed_claims": ["fully_calibrated_or_validated_soil_moisture", "wind", "pressure"]
+}

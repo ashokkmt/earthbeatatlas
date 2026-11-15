@@ -1,0 +1,22 @@
+{
+  "dataset_id": "nisar-goff",
+  "product_short_name": "NISAR_L2_GOFF_PROVISIONAL_V1",
+  "collection_short_name": "NISAR_L2_GOFF_PROVISIONAL_V1",
+  "collection_concept_id": "C2854341702-ASF",
+  "crid_per_granule": true,
+  "maturity": "PROVISIONAL",
+  "workflow_state": "source_raster_qa_required",
+  "harmony_capabilities_version": 3,
+  "harmony_paths_verified": true,
+  "source_guide": "https://nisar-docs.asf.alaska.edu/goff/",
+  "harmony_guide": "https://nisar-docs.asf.alaska.edu/harmony/",
+  "parameters": {
+    "along_track_offset": {"unit": "m (Harmony capabilities metadata)", "harmony_variable": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/{polarization}/{layer}/alongTrackOffset", "visualization": "diverging", "pair_required": true},
+    "slant_range_offset": {"unit": "unverified; Harmony reports meters^2, contradictory with this displacement layer; do not label until NASA specification or source attributes resolve it", "harmony_variable": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/{polarization}/{layer}/slantRangeOffset", "visualization": "diverging", "pair_required": true},
+    "along_track_offset_variance": {"unit": "m^2 (Harmony capabilities metadata)", "harmony_variable": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/{polarization}/{layer}/alongTrackOffsetVariance", "visualization": "sequential", "pair_required": true},
+    "snr": {"unit": "unit omitted by Harmony capabilities", "harmony_variable": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/{polarization}/{layer}/snr", "visualization": "sequential", "pair_required": true},
+    "valid_data_mask": {"unit": "categorical flag; values require product guide review", "harmony_variable": "/science/LSAR/GOFF/grids/frequencyA/pixelOffsets/mask", "visualization": "categorical", "pair_required": true}
+  },
+  "quality_requirements": ["same_pair_identity", "source_units_verified", "snr_quality_screen", "offset_outlier_review", "native_grid_and_nodata", "crid_stratification"],
+  "disallowed_claims": ["physical_velocity_without_calibration_quality_screen_and_pair_interval", "wind", "pressure"]
+}

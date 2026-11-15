@@ -12,6 +12,9 @@ dist/
 .mypy_cache/
 .coverage
 htmlcov/
+web/node_modules/
+web/dist/
+web/.vite/
 
 # Local scientific data and generated catalog cache
 data/cache/

@@ -130,7 +130,7 @@ def prepare_release(release: Path, output: Path) -> dict:
             raise ValueError(f"Source checksum mismatch: {source}")
         tags = {
             "stac_item_id": observation["id"], "source_granule_id": released_observation["granule_id"],
-            "release_id": catalog["release_id"], "processor": "phase5-gcov-cog-v1",
+            "release_id": catalog["release_id"], "processor": "gcov-cog-v1",
             "parameter": released_observation["parameter"], "polarization": released_observation["polarization"],
             "acquisition_date": released_observation["utc_date"], "crid": "P05023",
         }
@@ -138,4 +138,4 @@ def prepare_release(release: Path, output: Path) -> dict:
         asset = prepare_cog(source, destination, width=manifest["width"], height=manifest["height"],
                             crs=manifest["crs"], transform=manifest["transform"], tags=tags)
         assets.append({"item_id": observation["id"], **asset})
-    return {"release_id": catalog["release_id"], "processor": "phase5-gcov-cog-v1", "assets": assets}
+    return {"release_id": catalog["release_id"], "processor": "gcov-cog-v1", "assets": assets}

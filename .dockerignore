@@ -9,3 +9,12 @@ tests
 data/*
 !data/seeds/
 !data/seeds/**
+!data/releases/
+!data/releases/nisar-pilot-20261114-v1/
+!data/releases/nisar-pilot-20261114-v1/santa-rosa/
+!data/releases/nisar-pilot-20261114-v1/santa-rosa/santa-rosa-perimeter-clipped.geojson
+!data/releases/nisar-pilot-20261114-v1/barataria/
+!data/releases/nisar-pilot-20261114-v1/barataria/barataria-nwi-emergent.geojson
+!data/releases/nisar-pilot-20261114-v1/barataria/barataria-nwi-forested-shrub.geojson
+!data/releases/nisar-pilot-20261114-v1/colusa/
+!data/releases/nisar-pilot-20261114-v1/colusa/cdl-2025-rice.png

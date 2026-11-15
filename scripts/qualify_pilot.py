@@ -13,9 +13,10 @@ from nasa_explorer.catalog.registry import load_regions
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data/cache"
-OUT = CACHE / "phase-2a"
+OUT = CACHE / "pilot-qa"
 REGIONS = {name: (tuple(row["bounds_wgs84"]), row["analysis_epsg"])
            for name, row in load_regions().items()}
+PILOT_REGIONS = ("Santa Rosa", "Barataria", "Colusa")
 POLARIZATIONS = {"HH": "HHHH", "HV": "HVHV"}
 WITHHELD = {"Santa Rosa": {"2026-05-17": "Broad, reversing radiometric shift in both channels"}}
 REFERENCES = {
@@ -104,12 +105,12 @@ def main():
     pins = re.findall(r"^\| (Santa Rosa|Barataria|Colusa) / .*?\| (\d{4}-\d\d-\d\d) \| "
                       r"`(G\d+-ASF)` \| `(NISAR_[^`]+)`", source_notes, re.M)
     assert len(pins) == 12
-    jobs = json.loads((CACHE / "phase-1/jobs.json").read_text())
-    jobs += json.loads((CACHE / "phase-2/results.json").read_text())
+    jobs = json.loads((CACHE / "initial-pilot/jobs.json").read_text())
+    jobs += json.loads((CACHE / "pilot-inputs/results.json").read_text())
     assert len(jobs) == 36
     references = {}
     for name, count in REFERENCES.items():
-        features = json.loads((CACHE / "phase-2" / name).read_text())["features"]
+        features = json.loads((CACHE / "pilot-inputs" / name).read_text())["features"]
         assert len(features) == count
         assert all(shape(f["geometry"]).is_valid and not shape(f["geometry"]).is_empty for f in features)
         references[name] = features
@@ -118,14 +119,15 @@ def main():
     classes = ("Freshwater Emergent Wetland", "Freshwater Forested/Shrub Wetland")
     for features, name in zip(list(references.values())[1:], classes, strict=True):
         assert all(f["properties"]["WETLAND_TYPE"] == name for f in features)
-    cdl_path = CACHE / "phase-2/colusa-cdl-2025.tif"
+    cdl_path = CACHE / "pilot-inputs/colusa-cdl-2025.tif"
     with rasterio.open(cdl_path) as cdl:
         rice = cdl.read(1, masked=True)
         assert cdl.crs.to_epsg() == 5070 and (rice == 3).sum() == 522276
 
     report = {"mask_codes_accepted_for_this_inventory": [1],
               "reference_counts": REFERENCES, "cdl_rice_cells": 522276, "regions": {}}
-    for region, (bounds, epsg) in REGIONS.items():
+    for region in PILOT_REGIONS:
+        bounds, epsg = REGIONS[region]
         aoi = mapping(box(*bounds))
         frames = {key: [] for key in POLARIZATIONS}
         native_valid = {key: [] for key in POLARIZATIONS}
@@ -136,7 +138,8 @@ def main():
         for _, date, granule, name in region_pins:
             entry = {"date": date, "granule": granule, "files": {}}
             for variable in ("mask", *POLARIZATIONS.values()):
-                paths = list(CACHE.glob(f"phase-[12]/*_{name}_science_LSAR_GCOV_grids_frequencyA_{variable}_subsetted.tif"))
+                paths = [path for folder in ("initial-pilot", "pilot-inputs")
+                         for path in (CACHE / folder).glob(f"*_{name}_science_LSAR_GCOV_grids_frequencyA_{variable}_subsetted.tif")]
                 matches = [job for job in jobs if (job["date"], job["granule"], job["variable"]) ==
                            (date, granule, variable)]
                 assert len(paths) == len(matches) == 1, (granule, variable)

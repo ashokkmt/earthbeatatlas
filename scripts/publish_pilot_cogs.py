@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest", type=Path, default=Path("data/cache/phase-5/cogs/assets.json"))
+    parser.add_argument("--manifest", type=Path, default=Path("data/cache/cogs/assets.json"))
     parser.add_argument("--release", type=Path, default=ROOT / "data/releases/nisar-pilot-20261114-v1")
     parser.add_argument("--bucket", default=os.environ.get("S3_BUCKET", "nisar-assets"))
     parser.add_argument("--register", action="store_true", help="Update pilot STAC items in PostgreSQL")

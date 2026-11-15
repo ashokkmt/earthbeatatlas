@@ -2,10 +2,15 @@ import unittest
 
 import numpy as np
 
-from scripts.build_release import rgba, stats
+from scripts.build_release import PILOT_REGIONS, REGIONS, rgba, stats
 
 
 class ReleaseMathTests(unittest.TestCase):
+    def test_immutable_gcov_pilot_stays_with_its_three_configured_regions(self):
+        self.assertEqual(PILOT_REGIONS, ("Santa Rosa", "Barataria", "Colusa"))
+        self.assertNotIn("Antarctica", PILOT_REGIONS)
+        self.assertIn("Antarctica", REGIONS)
+
     def test_pair_thresholds_use_paired_cells_and_fixed_cell_area(self):
         delta = np.array([[4.0, 3.0, -4.0, -3.0, 2.0, np.nan]])
         paired = np.array([[True, True, True, True, False, True]])

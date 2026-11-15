@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--release", type=Path, default=ROOT / "data/releases/nisar-pilot-20261114-v1")
-    parser.add_argument("--output", type=Path, default=ROOT / "data/cache/phase-5/cogs")
+    parser.add_argument("--output", type=Path, default=ROOT / "data/cache/cogs")
     parser.add_argument("--manifest", type=Path, default=None)
     args = parser.parse_args()
     manifest = prepare_release(args.release, args.output)

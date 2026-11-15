@@ -10,9 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     release = ROOT / "data/releases/nisar-pilot-20261114-v1"
-    cache_seed = ROOT / "data/cache/phase-3a/stac/items.json"
+    cache_seed = ROOT / "data/cache/catalog-seed/stac/items.json"
     result = export_stac(release, cache_seed,
-                         ROOT / "data/cache/phase-3a/cmr-audit.json",
+                         ROOT / "data/cache/catalog-seed/cmr-audit.json",
                          load_regions(), load_products())
     metadata_count = export_metadata_seed(cache_seed, ROOT / "data/seeds/nisar-gcov-pilot.json")
     print(f"Exported {result['acquisitions']} acquisitions and {result['pairs']} pairs")

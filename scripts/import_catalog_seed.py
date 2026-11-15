@@ -6,7 +6,7 @@ from nasa_explorer.db import migrate
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Import Phase 3a STAC JSON metadata into PgSTAC")
+    parser = argparse.ArgumentParser(description="Import the curated STAC metadata seed into PgSTAC")
     parser.add_argument("seed", type=Path, nargs="?", default=Path("data/seeds/nisar-gcov-pilot.json"))
     args = parser.parse_args()
     if not args.seed.is_file():

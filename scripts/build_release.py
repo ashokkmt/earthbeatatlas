@@ -13,7 +13,7 @@ from shapely.geometry import box, mapping
 from nasa_explorer.catalog.registry import load_products, load_regions
 from scripts.audit_cmr_granules import cmr_record_url
 
-from scripts.phase2a_qa import CACHE, POLARIZATIONS, REGIONS, aggregate, inside, target_grid, WITHHELD
+from scripts.qualify_pilot import CACHE, PILOT_REGIONS, POLARIZATIONS, REGIONS, aggregate, inside, target_grid, WITHHELD
 
 ROOT = Path(__file__).resolve().parents[1]
 REGION_CONFIG = load_regions()
@@ -22,7 +22,7 @@ RELEASE_ID = "nisar-pilot-20261114-v1"
 RELEASES = ROOT / "data/releases"
 RELEASE = RELEASES / RELEASE_ID
 CATALOG_PATH = ROOT / "data/catalog.json"
-SOURCE = CACHE / "phase-2"
+SOURCE = CACHE / "pilot-inputs"
 CHANNELS = PRODUCT_CONFIG["channels"]
 DIFFERENCE_SCALE_DB = 6.0
 SLUG = {name: row["slug"] for name, row in REGION_CONFIG.items()}
@@ -31,13 +31,16 @@ REGION_NAMES = {name: row["full_name"] for name, row in REGION_CONFIG.items()}
 ALIASES = {name: row["aliases"] for name, row in REGION_CONFIG.items()}
 CONTEXT = {name: [(layer["filename"], layer["label"]) for layer in row["context_layers"]]
            for name, row in REGION_CONFIG.items()}
-SOURCES = {name: row["context_layers"][0]["source"] for name, row in REGION_CONFIG.items()}
+SOURCES = {name: row["context_layers"][0]["source"] if row["context_layers"] else None
+           for name, row in REGION_CONFIG.items()}
 
 
 def read_scene(region, date, pol):
     suffix = date.replace("-", "")
-    values = list(CACHE.glob(f"phase-[12]/*{suffix}*_{CHANNELS[pol]}_subsetted.tif"))
-    masks = list(CACHE.glob(f"phase-[12]/*{suffix}*_mask_subsetted.tif"))
+    values = [path for folder in ("initial-pilot", "pilot-inputs")
+              for path in (CACHE / folder).glob(f"*{suffix}*_{CHANNELS[pol]}_subsetted.tif")]
+    masks = [path for folder in ("initial-pilot", "pilot-inputs")
+             for path in (CACHE / folder).glob(f"*{suffix}*_mask_subsetted.tif")]
     if len(values) != 1 or len(masks) != 1:
         raise ValueError(f"Expected one data/mask pair for {region} {date} {pol}")
     with rasterio.open(values[0]) as ds:
@@ -129,7 +132,8 @@ def validate(release, catalog):
     expected_order.sort(key=lambda row: row["utc_date"], reverse=True)
     assert catalog_ids == [row["id"] for row in expected_order]
     total_observations = total_pairs = 0
-    for region, (_, epsg) in REGIONS.items():
+    for region in PILOT_REGIONS:
+        _, epsg = REGIONS[region]
         slug = SLUG[region]
         manifest_path = release / slug / "manifest.json"
         manifest = json.loads(manifest_path.read_text())
@@ -193,7 +197,7 @@ def main():
         counts = validate(RELEASE, catalog)
         print(f"Validated immutable {RELEASE_ID}: {counts['observations']} observations, {counts['pairs']} pairs")
         return
-    qa = json.loads((CACHE / "phase-2a/qa.json").read_text())
+    qa = json.loads((CACHE / "pilot-qa/qa.json").read_text())
     source_text = (ROOT / "plans/data-sources.md").read_text()
     granules = {date: (granule, name) for date, granule, name in re.findall(
         r"^\| (?:Santa Rosa|Barataria|Colusa) / .*?\| (\d{4}-\d{2}-\d{2}) \| `(G\d+-ASF)` \| `(NISAR_[^`]+)`", source_text, re.M)}
@@ -203,7 +207,8 @@ def main():
         shutil.rmtree(stage)
     stage.mkdir(parents=True)
     catalog = {"release_id": RELEASE_ID, "observations": []}
-    for region, (bounds, epsg) in REGIONS.items():
+    for region in PILOT_REGIONS:
+        bounds, epsg = REGIONS[region]
         slug = SLUG[region]
         out = stage / slug
         out.mkdir()
@@ -256,7 +261,10 @@ def main():
                 raw = out / f"{date}-{pol.lower()}.f32"
                 frame.astype("<f4").tofile(raw)
                 granule, full_name = granules[date]
-                source_files = list(CACHE.glob(f"phase-[12]/*{date.replace('-', '')}*_{CHANNELS[pol]}_subsetted.tif")) + list(CACHE.glob(f"phase-[12]/*{date.replace('-', '')}*_mask_subsetted.tif"))
+                source_files = [*CACHE.glob(f"initial-pilot/*{date.replace('-', '')}*_{CHANNELS[pol]}_subsetted.tif"),
+                                *CACHE.glob(f"pilot-inputs/*{date.replace('-', '')}*_{CHANNELS[pol]}_subsetted.tif"),
+                                *CACHE.glob(f"initial-pilot/*{date.replace('-', '')}*_mask_subsetted.tif"),
+                                *CACHE.glob(f"pilot-inputs/*{date.replace('-', '')}*_mask_subsetted.tif")]
                 assert len(source_files) == 2
                 obs = {"id": obs_id, "region_id": slug, "dataset_id": "nisar-gcov", "parameter": parameter,
                        "polarization": pol, "units": "dB", "utc_date": date,
@@ -307,7 +315,7 @@ def main():
                     "provenance": {"collection": "C2854338529-ASF", "product": "NISAR_L2_GCOV_PROVISIONAL_V1",
                                    "crid": "P05023", "mask_codes_accepted": [1], "withheld_dates": WITHHELD.get(region, {}),
                                    "aggregation": "mean valid linear gamma-zero power, then 10 log10",
-                                   "minimum_source_cells": 8, "source_qa": "data/cache/phase-2a/qa.json"}}
+                                   "minimum_source_cells": 8, "source_qa": "data/cache/pilot-qa/qa.json"}}
         (out / "manifest.json").write_text(json.dumps(manifest, indent=2, allow_nan=False) + "\n")
     catalog["observations"].sort(key=lambda row: row["id"])
     catalog["observations"].sort(key=lambda row: row["utc_date"], reverse=True)

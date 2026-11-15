@@ -57,6 +57,7 @@ def umm_to_stac(record):
     crid = re.search(r"_(P\d{5})_", granule_ur)
     product_type = _attribute(umm, "PRODUCT_TYPE") or collection["ShortName"].split("_")[2]
     polarization = _attribute(umm, "FREQUENCY_A_POLARIZATION")
+    polarizations = polarization.split("+") if polarization else []
     related = next((u.get("URL") for u in umm.get("RelatedUrls", [])
                     if u.get("Type") == "GET DATA" and u.get("URL", "").startswith("https://")), None)
     attrs = {name: _attribute(umm, name) for name in (
@@ -66,6 +67,11 @@ def umm_to_stac(record):
         "datetime": start, "start_datetime": start, "end_datetime": end,
         "title": granule_ur, "product": f"nisar-{product_type.lower()}",
         "parameter": polarization or "unknown",
+        "sar:polarizations": polarizations,
+        "nisar:has_hh": "HH" in polarizations,
+        "nisar:has_hv": "HV" in polarizations,
+        "nisar:has_vh": "VH" in polarizations,
+        "nisar:has_vv": "VV" in polarizations,
         "nisar:collection_maturity": maturity.group(1).upper() if maturity else "unknown",
         "nisar:crid": crid.group(1) if crid else None,
         "nisar:product_version": attrs["PRODUCT_VERSION"],

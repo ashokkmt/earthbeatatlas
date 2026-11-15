@@ -117,7 +117,7 @@ def run(fetch=None):
 
 def main():
     result = run()
-    target = ROOT / "data/cache/phase-3a/cmr-audit.json"
+    target = ROOT / "data/cache/catalog-seed/cmr-audit.json"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(result, indent=2) + "\n")
     print(f"Audited {len(result['records'])} CMR records -> {target.relative_to(ROOT)}")

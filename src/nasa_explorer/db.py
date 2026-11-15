@@ -11,7 +11,12 @@ def connect():
 
 
 def migrate():
-    migration = ROOT / "migrations/001_project_catalog.sql"
     with connect() as conn:
-        conn.execute(migration.read_text())
-        conn.execute("INSERT INTO nasa_explorer.schema_migrations(version) VALUES ('001_project_catalog') ON CONFLICT DO NOTHING")
+        conn.execute("CREATE SCHEMA IF NOT EXISTS nasa_explorer")
+        conn.execute("CREATE TABLE IF NOT EXISTS nasa_explorer.schema_migrations (version text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now())")
+        for migration in sorted((ROOT / "migrations").glob("*.sql")):
+            version = migration.stem
+            if conn.execute("SELECT 1 FROM nasa_explorer.schema_migrations WHERE version=%s", (version,)).fetchone():
+                continue
+            conn.execute(migration.read_text())
+            conn.execute("INSERT INTO nasa_explorer.schema_migrations(version) VALUES (%s) ON CONFLICT DO NOTHING", (version,))

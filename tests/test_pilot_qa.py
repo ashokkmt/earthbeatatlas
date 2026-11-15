@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from scripts.phase2a_qa import aggregate, metrics
+from scripts.qualify_pilot import aggregate, metrics
 
 
 class PilotMathTests(unittest.TestCase):

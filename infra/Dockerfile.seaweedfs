@@ -1,0 +1,4 @@
+FROM chrislusf/seaweedfs:4.52
+RUN apk add --no-cache gettext
+COPY infra/start-seaweedfs.sh /usr/local/bin/start-seaweedfs
+ENTRYPOINT ["sh", "/usr/local/bin/start-seaweedfs"]

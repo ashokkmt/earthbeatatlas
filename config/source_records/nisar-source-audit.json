@@ -1,0 +1,589 @@
+{
+  "source": "NASA CMR / ASF public metadata",
+  "audited_at_utc": "2026-11-15",
+  "query_period": {
+    "start": "2025-10-01",
+    "end": "2026-11-15"
+  },
+  "limit_per_region_product": 100,
+  "returned_record_count": 917,
+  "coverage_summary": [
+    {
+      "region_id": "Antarctica",
+      "dataset_id": "nisar-gcov",
+      "returned_granules": 100,
+      "first_source_date": "2025-10-29",
+      "last_source_date": "2026-07-13",
+      "distinct_start_dates": 65,
+      "months_with_records": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07"
+      ]
+    },
+    {
+      "region_id": "Antarctica",
+      "dataset_id": "nisar-goff",
+      "returned_granules": 100,
+      "first_source_date": "2025-10-29",
+      "last_source_date": "2026-07-20",
+      "distinct_start_dates": 64,
+      "months_with_records": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07"
+      ]
+    },
+    {
+      "region_id": "Antarctica",
+      "dataset_id": "nisar-gunw",
+      "returned_granules": 100,
+      "first_source_date": "2025-10-29",
+      "last_source_date": "2026-07-20",
+      "distinct_start_dates": 64,
+      "months_with_records": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07"
+      ]
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gcov",
+      "returned_granules": 40,
+      "first_source_date": "2026-06-21",
+      "last_source_date": "2026-10-19",
+      "distinct_start_dates": 19,
+      "months_with_records": [
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gunw",
+      "returned_granules": 36,
+      "first_source_date": "2026-06-21",
+      "last_source_date": "2026-10-07",
+      "distinct_start_dates": 17,
+      "months_with_records": [
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-sme2",
+      "returned_granules": 40,
+      "first_source_date": "2026-06-21",
+      "last_source_date": "2026-10-19",
+      "distinct_start_dates": 19,
+      "months_with_records": [
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gcov",
+      "returned_granules": 92,
+      "first_source_date": "2025-11-08",
+      "last_source_date": "2026-10-21",
+      "distinct_start_dates": 78,
+      "months_with_records": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gunw",
+      "returned_granules": 85,
+      "first_source_date": "2025-11-08",
+      "last_source_date": "2026-10-09",
+      "distinct_start_dates": 74,
+      "months_with_records": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-sme2",
+      "returned_granules": 89,
+      "first_source_date": "2025-11-08",
+      "last_source_date": "2026-10-21",
+      "distinct_start_dates": 78,
+      "months_with_records": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gcov",
+      "returned_granules": 82,
+      "first_source_date": "2025-11-19",
+      "last_source_date": "2026-10-21",
+      "distinct_start_dates": 77,
+      "months_with_records": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gunw",
+      "returned_granules": 73,
+      "first_source_date": "2025-11-19",
+      "last_source_date": "2026-10-09",
+      "distinct_start_dates": 73,
+      "months_with_records": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-sme2",
+      "returned_granules": 80,
+      "first_source_date": "2025-11-19",
+      "last_source_date": "2026-10-21",
+      "distinct_start_dates": 77,
+      "months_with_records": [
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ]
+    }
+  ],
+  "example_records": [
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4243944429-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_023_105_A_016_4005_DHDH_A_20260621T111841_20260621T111907_P05023_N_P_J_001",
+      "revision_date": "2026-07-11T17:59:44.329Z",
+      "start": "2026-06-21T11:18:41.000000Z",
+      "end": "2026-06-21T11:19:07.999342Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4297150193-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_029_105_A_016_4005_DHDH_A_20260901T111838_20260901T111904_P05023_N_P_J_001",
+      "revision_date": "2026-09-03T08:15:37.255Z",
+      "start": "2026-09-01T11:18:38.000000Z",
+      "end": "2026-09-01T11:19:04.999342Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4381064139-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_033_105_A_017_4005_DHDH_A_20261019T111903_20261019T111937_P05023_N_F_J_001",
+      "revision_date": "2026-10-21T08:44:06.875Z",
+      "start": "2026-10-19T11:19:03.000000Z",
+      "end": "2026-10-19T11:19:37.999342Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4245802508-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_023_105_A_016_024_4000_SH_20260621T111841_20260621T111907_20260703T111840_20260703T111906_P05023_N_P_J_001",
+      "revision_date": "2026-08-12T14:41:21.424Z",
+      "start": "2026-06-21T11:18:41.000000Z",
+      "end": "2026-07-03T11:19:06.999342Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4300718631-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_028_156_D_073_029_4000_SH_20260824T004509_20260824T004544_20260905T004509_20260905T004544_P05023_N_F_J_001",
+      "revision_date": "2026-09-07T02:22:37.099Z",
+      "start": "2026-08-24T00:45:09.000000Z",
+      "end": "2026-09-05T00:45:44.999342Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4381233655-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_032_105_A_017_033_4000_SH_20261007T111903_20261007T111937_20261019T111903_20261019T111937_P05023_N_F_J_001",
+      "revision_date": "2026-10-21T11:31:22.406Z",
+      "start": "2026-10-07T11:19:03.000000Z",
+      "end": "2026-10-19T11:19:37.999342Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4248792883-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_023_105_A_016_4005_DHDH_A_20260621T111841_20260621T111907_P05023_N_P_J_001",
+      "revision_date": "2026-07-16T01:00:52.179Z",
+      "start": "2026-06-21T11:18:41.000000Z",
+      "end": "2026-06-21T11:19:07.000000Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4297160564-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_029_105_A_016_4005_DHDH_A_20260901T111838_20260901T111904_P05023_N_P_J_001",
+      "revision_date": "2026-09-03T08:30:57.897Z",
+      "start": "2026-09-01T11:18:38.000000Z",
+      "end": "2026-09-01T11:19:04.000000Z"
+    },
+    {
+      "region_id": "Barataria",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4381092731-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_033_105_A_017_4005_DHDH_A_20261019T111903_20261019T111937_P05023_N_F_J_001",
+      "revision_date": "2026-10-21T09:10:38.594Z",
+      "start": "2026-10-19T11:19:03.000000Z",
+      "end": "2026-10-19T11:19:37.000000Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4272330547-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_004_143_D_069_4005_DHDH_A_20251108T030425_20251108T030500_P05023_N_F_J_001",
+      "revision_date": "2026-08-06T16:31:54.757Z",
+      "start": "2025-11-08T03:04:25.000000Z",
+      "end": "2025-11-08T03:05:00.999342Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4275302408-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_019_034_A_021_4005_DHDH_A_20260429T130936_20260429T131011_P05023_N_F_J_001",
+      "revision_date": "2026-08-10T12:21:19.290Z",
+      "start": "2026-04-29T13:09:36.000000Z",
+      "end": "2026-04-29T13:10:11.999342Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4385047366-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_033_135_A_021_4005_DHDH_A_20261021T131750_20261021T131824_P05023_N_F_J_001",
+      "revision_date": "2026-10-23T11:18:00.198Z",
+      "start": "2026-10-21T13:17:50.000000Z",
+      "end": "2026-10-21T13:18:24.999342Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4273778390-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_004_143_D_069_005_4000_SH_20251108T030425_20251108T030500_20251120T030425_20251120T030500_P05023_N_F_J_001",
+      "revision_date": "2026-08-08T01:49:14.764Z",
+      "start": "2025-11-08T03:04:25.000000Z",
+      "end": "2025-11-20T03:05:00.999342Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4275834084-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_018_034_A_021_019_4000_SH_20260417T130937_20260417T131012_20260429T130936_20260429T131011_P05023_N_F_J_001",
+      "revision_date": "2026-08-11T04:19:27.381Z",
+      "start": "2026-04-17T13:09:37.000000Z",
+      "end": "2026-04-29T13:10:11.999342Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4385295827-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_032_135_A_021_033_4000_SH_20261009T131750_20261009T131824_20261021T131750_20261021T131824_P05023_N_F_J_001",
+      "revision_date": "2026-10-23T14:02:26.705Z",
+      "start": "2026-10-09T13:17:50.000000Z",
+      "end": "2026-10-21T13:18:24.999342Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4276418957-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_004_143_D_069_4005_DHDH_A_20251108T030425_20251108T030500_P05023_N_F_J_001",
+      "revision_date": "2026-08-11T17:54:06.902Z",
+      "start": "2025-11-08T03:04:25.000000Z",
+      "end": "2025-11-08T03:05:00.000000Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4281824669-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_018_143_D_069_4005_DHDH_A_20260425T030431_20260425T030505_P05023_N_F_J_001",
+      "revision_date": "2026-08-17T15:55:58.489Z",
+      "start": "2026-04-25T03:04:31.000000Z",
+      "end": "2026-04-25T03:05:05.000000Z"
+    },
+    {
+      "region_id": "Colusa",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4385091449-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_033_135_A_021_4005_DHDH_A_20261021T131750_20261021T131824_P05023_N_F_J_001",
+      "revision_date": "2026-10-23T11:37:48.994Z",
+      "start": "2026-10-21T13:17:50.000000Z",
+      "end": "2026-10-21T13:18:24.000000Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4271441387-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_005_135_A_019_4005_DHDH_A_20251119T131641_20251119T131718_P05023_N_F_J_001",
+      "revision_date": "2026-08-05T19:50:07.607Z",
+      "start": "2025-11-19T13:16:41.000000Z",
+      "end": "2025-11-19T13:17:18.999342Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4275223942-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_020_114_D_071_4005_DHDH_A_20260517T024858_20260517T024933_P05023_N_F_J_001",
+      "revision_date": "2026-08-10T10:52:02.558Z",
+      "start": "2026-05-17T02:48:58.000000Z",
+      "end": "2026-05-17T02:49:33.999342Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gcov",
+      "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "granule_concept_id": "G4385130717-ASF",
+      "granule_ur": "NISAR_L2_PR_GCOV_033_135_A_019_4005_DHDH_A_20261021T131640_20261021T131717_P05023_N_F_J_001",
+      "revision_date": "2026-10-23T11:56:34.940Z",
+      "start": "2026-10-21T13:16:40.000000Z",
+      "end": "2026-10-21T13:17:17.999342Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4274233131-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_005_135_A_019_006_4000_SH_20251119T131641_20251119T131718_20251201T131642_20251201T131719_P05023_N_F_J_001",
+      "revision_date": "2026-08-08T13:18:24.299Z",
+      "start": "2025-11-19T13:16:41.000000Z",
+      "end": "2025-12-01T13:17:19.999342Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4275760058-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_019_034_A_019_020_4000_SH_20260429T130829_20260429T130904_20260511T130828_20260511T130903_P05023_N_F_J_001",
+      "revision_date": "2026-08-11T02:24:47.185Z",
+      "start": "2026-04-29T13:08:29.000000Z",
+      "end": "2026-05-11T13:09:03.999342Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-gunw",
+      "collection_short_name": "NISAR_L2_GUNW_PROVISIONAL_V1",
+      "collection_concept_id": "C2854335566-ASF",
+      "granule_concept_id": "G4385891382-ASF",
+      "granule_ur": "NISAR_L2_PR_GUNW_032_135_A_019_033_4000_SH_20261009T131640_20261009T131717_20261021T131640_20261021T131717_P05023_N_F_J_001",
+      "revision_date": "2026-10-23T21:29:31.819Z",
+      "start": "2026-10-09T13:16:40.000000Z",
+      "end": "2026-10-21T13:17:17.999342Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4276480859-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_005_135_A_019_4005_DHDH_A_20251119T131641_20251119T131718_P05023_N_F_J_001",
+      "revision_date": "2026-08-11T19:15:55.150Z",
+      "start": "2025-11-19T13:16:41.000000Z",
+      "end": "2025-11-19T13:17:18.000000Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4282360744-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_020_034_A_019_4005_DHDH_A_20260511T130828_20260511T130903_P05023_N_F_J_001",
+      "revision_date": "2026-08-18T16:05:59.808Z",
+      "start": "2026-05-11T13:08:28.000000Z",
+      "end": "2026-05-11T13:09:03.000000Z"
+    },
+    {
+      "region_id": "Santa Rosa",
+      "dataset_id": "nisar-sme2",
+      "collection_short_name": "NISAR_L3_SME2_PROVISIONAL_V1",
+      "collection_concept_id": "C2854344945-ASF",
+      "granule_concept_id": "G4385159525-ASF",
+      "granule_ur": "NISAR_L3_PR_SME2_033_135_A_019_4005_DHDH_A_20261021T131640_20261021T131717_P05023_N_F_J_001",
+      "revision_date": "2026-10-23T12:11:51.761Z",
+      "start": "2026-10-21T13:16:40.000000Z",
+      "end": "2026-10-21T13:17:17.000000Z"
+    },
+    {
+      "region_id": "Antarctica",
+      "dataset_id": "nisar-goff",
+      "collection_short_name": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "collection_concept_id": "C2854341702-ASF",
+      "granule_concept_id": "G4273939392-ASF",
+      "granule_ur": "NISAR_L2_PR_GOFF_004_004_A_136_006_7700_SH_20251029T121824_20251029T121857_20251122T121825_20251122T121857_P05023_N_P_J_001",
+      "revision_date": "2026-08-08T06:36:55.495Z",
+      "start": "2025-10-29T12:18:24.000000Z",
+      "end": "2025-11-22T12:18:57.999342Z"
+    },
+    {
+      "region_id": "Antarctica",
+      "dataset_id": "nisar-goff",
+      "collection_short_name": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "collection_concept_id": "C2854341702-ASF",
+      "granule_concept_id": "G4273940888-ASF",
+      "granule_ur": "NISAR_L2_PR_GOFF_004_004_A_137_006_7700_SH_20251029T121856_20251029T121926_20251122T121856_20251122T121927_P05023_N_P_J_001",
+      "revision_date": "2026-08-08T06:42:04.543Z",
+      "start": "2025-10-29T12:18:56.000000Z",
+      "end": "2025-11-22T12:19:27.999342Z"
+    },
+    {
+      "region_id": "Antarctica",
+      "dataset_id": "nisar-goff",
+      "collection_short_name": "NISAR_L2_GOFF_PROVISIONAL_V1",
+      "collection_concept_id": "C2854341702-ASF",
+      "granule_concept_id": "G4274409284-ASF",
+      "granule_ur": "NISAR_L2_PR_GOFF_006_004_A_136_007_7700_SH_20251122T121825_20251122T121857_20251204T121825_20251204T121858_P05023_N_P_J_001",
+      "revision_date": "2026-08-08T23:10:15.002Z",
+      "start": "2025-11-22T12:18:25.000000Z",
+      "end": "2025-12-04T12:18:58.999342Z"
+    }
+  ],
+  "goff_note": "GOFF records were found within the newly configured, tightly bounded Antarctica QA AOI, with 100 returned records spanning 2025-10-29 through 2026-07-20 and 10 months represented (the query is capped at 100). The sample granule G4273939392-ASF was subsetted there. The region is a QA area; no glacier-specific displacement claim is made.",
+  "limitations": [
+    "CMR queries are bounded to 100 granules per configured region/product; counts are not full archive totals.",
+    "Granule counts can include overlapping frames and are not unique overpasses.",
+    "GUNW and GOFF temporal intervals describe paired acquisitions; preserve both pair dates.",
+    "One COG subset per GUNW, GOFF and SME2 family verifies extraction and native georeferencing only; product-specific interpretation and time-series processing still require QA.",
+    "Raster sample checksums, dimensions, CRS, nodata and valid-value ranges are recorded separately in nisar-raster-samples.json."
+  ]
+}

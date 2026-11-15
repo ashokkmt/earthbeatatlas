@@ -31,6 +31,8 @@ def load_regions(config_root: Path = CONFIG_ROOT) -> dict[str, dict]:
 def load_products(config_root: Path = CONFIG_ROOT) -> dict[str, dict]:
     records = _load_files(config_root / "products", "dataset_id")
     for dataset_id, record in records.items():
-        if not record.get("collection_concept_id") or not record.get("crid"):
+        if not (record.get("collection_concept_id") or record.get("collection_short_name")):
             raise ValueError(f"Missing collection provenance for {dataset_id}")
+        if record.get("collection_concept_id") and not (record.get("crid") or record.get("crid_per_granule")):
+            raise ValueError(f"Missing CRID for pinned collection {dataset_id}")
     return records

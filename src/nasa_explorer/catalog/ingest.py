@@ -1,8 +1,21 @@
 """Idempotent metadata-only PgSTAC ingestion and source revision history."""
 import hashlib
 import json
+import re
 
 from nasa_explorer.db import connect
+
+
+def _normalize_polarization_flags(item):
+    props = item.setdefault("properties", {})
+    polarizations = props.get("sar:polarizations")
+    if not isinstance(polarizations, list):
+        polarizations = re.findall(r"(?<![A-Z])(?:HH|HV|VH|VV)(?![A-Z])", str(props.get("parameter", "")).upper())
+    polarizations = list(dict.fromkeys(str(value).upper() for value in polarizations))
+    props["sar:polarizations"] = polarizations
+    for polarization in ("HH", "HV", "VH", "VV"):
+        props[f"nisar:has_{polarization.lower()}"] = polarization in polarizations
+    return item
 
 
 def _digest(item):
@@ -17,6 +30,7 @@ def import_items(items):
     for item in items:
         if not item.get("collection") or not item.get("id"):
             raise ValueError("STAC item must include collection and id")
+        _normalize_polarization_flags(item)
         props = item.get("properties", {})
         revision = str(props.get("nisar:cmr_revision_id", "project-seed"))
         revisions.append((item["collection"], item["id"], revision,

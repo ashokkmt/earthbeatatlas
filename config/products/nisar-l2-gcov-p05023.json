@@ -6,12 +6,19 @@
   "maturity": "PROVISIONAL",
   "crid": "P05023",
   "product_version": "1.0.11",
+  "collection_short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+  "workflow_state": "ready_pilot",
   "frequency_band": "L",
   "frequency": "A",
   "instrument_mode_code": "4005",
   "channels": {
     "HH": "HHHH",
     "HV": "HVHV"
+  },
+  "parameters": {
+    "HH": {"unit": "linear gamma-zero power", "harmony_variable": "/science/LSAR/GCOV/grids/frequencyA/HHHH", "visualization": "sequential", "pair_required": false},
+    "HV": {"unit": "linear gamma-zero power", "harmony_variable": "/science/LSAR/GCOV/grids/frequencyA/HVHV", "visualization": "sequential", "pair_required": false},
+    "valid_data_mask": {"unit": "integer quality flag", "harmony_variable": "/science/LSAR/GCOV/grids/frequencyA/mask", "visualization": "categorical", "pair_required": false}
   },
   "mask_codes_accepted_for_pilot": [
     1
