@@ -1,0 +1,125 @@
+name: earthbeat-atlas
+
+services:
+  db:
+    image: ghcr.io/stac-utils/pgstac:v0.10.0
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB}
+      PGUSER: ${POSTGRES_USER:?set POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      PGDATABASE: ${POSTGRES_DB:?set POSTGRES_DB}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h /var/run/postgresql -U $${PGUSER} -d $${PGDATABASE}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  bootstrap:
+    build: ../..
+    profiles: [ops]
+    command: ["sh", "-c", "python scripts/migrate_catalog.py && python scripts/import_catalog_seed.py"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+    depends_on:
+      db: {condition: service_healthy}
+    restart: "no"
+
+  stac-api:
+    image: ghcr.io/stac-utils/stac-fastapi-pgstac:7.2.0
+    environment:
+      PGHOST: db
+      PGPORT: 5432
+      PGUSER: ${POSTGRES_USER:?set POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      PGDATABASE: ${POSTGRES_DB:?set POSTGRES_DB}
+      STAC_FASTAPI_TITLE: EarthBeat Atlas Catalog
+      STAC_FASTAPI_DESCRIPTION: Public NISAR archive metadata and prepared pilot assets
+      STAC_FASTAPI_VERSION: 0.1.0
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://earthbeat.example.org}
+    depends_on:
+      db: {condition: service_healthy}
+    restart: unless-stopped
+
+  project-api:
+    build: ../..
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+      S3_BUCKET: ${S3_BUCKET:?set S3_BUCKET}
+      TITILER_INTERNAL_URL: http://tile-api:80
+      ENABLE_PROCESSING_JOBS: ${ENABLE_PROCESSING_JOBS:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://earthbeat.example.org}
+    depends_on:
+      db: {condition: service_healthy}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  catalog-sync:
+    build: ../..
+    command: ["python", "-m", "nasa_explorer.catalog.sync"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+    depends_on:
+      db: {condition: service_healthy}
+    restart: unless-stopped
+
+  tile-api:
+    image: ghcr.io/developmentseed/titiler:2.4.0
+    environment:
+      AWS_ACCESS_KEY_ID: ${S3_READ_ACCESS_KEY_ID:?set S3_READ_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${S3_READ_SECRET_ACCESS_KEY:?set S3_READ_SECRET_ACCESS_KEY}
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
+      AWS_S3_ENDPOINT: ${TITILER_S3_ENDPOINT:-s3.amazonaws.com}
+      AWS_VIRTUAL_HOSTING: ${S3_VIRTUAL_HOSTING:-TRUE}
+      AWS_HTTPS: "YES"
+      GDAL_DISABLE_READDIR_ON_OPEN: EMPTY_DIR
+      CPL_VSIL_CURL_ALLOWED_EXTENSIONS: .tif,.tiff
+      TITILER_API_CORS_ORIGINS: ${CORS_ORIGINS:-https://earthbeat.example.org}
+    restart: unless-stopped
+
+  processing-worker:
+    build: ../..
+    profiles: [processing]
+    command: ["python", "scripts/run_processing_worker.py"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+      EARTHDATA_TOKEN: ${EARTHDATA_TOKEN:-}
+      S3_ENDPOINT_URL: ${S3_ENDPOINT_URL:-}
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION:-us-east-1}
+      S3_ACCESS_KEY_ID: ${S3_ACCESS_KEY_ID:?set S3_ACCESS_KEY_ID}
+      S3_SECRET_ACCESS_KEY: ${S3_SECRET_ACCESS_KEY:?set S3_SECRET_ACCESS_KEY}
+      S3_BUCKET: ${S3_BUCKET:?set S3_BUCKET}
+    depends_on:
+      db: {condition: service_healthy}
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ../..
+      dockerfile: infra/cloud/Dockerfile.web
+      args:
+        VITE_STAC_BASE: /stac
+        VITE_PROJECT_API: /api
+        VITE_TILES_BASE: /api/v1/tiles
+    environment:
+      PUBLIC_DOMAIN: ${PUBLIC_DOMAIN:-:80}
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      project-api: {condition: service_healthy}
+      stac-api: {condition: service_started}
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:

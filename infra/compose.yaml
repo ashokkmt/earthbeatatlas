@@ -35,6 +35,7 @@ services:
     build: ..
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-username}:${POSTGRES_PASSWORD:-password}@db:5432/${POSTGRES_DB:-postgis}
+      ENABLE_PROCESSING_JOBS: ${ENABLE_PROCESSING_JOBS:-true}
     ports: ["127.0.0.1:8000:8000"]
     depends_on:
       db: {condition: service_healthy}

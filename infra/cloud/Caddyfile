@@ -1,0 +1,24 @@
+{$PUBLIC_DOMAIN::80} {
+	encode zstd gzip
+
+	@health path /healthz
+	handle @health {
+		reverse_proxy project-api:8000
+	}
+
+	@api path /api/*
+	handle @api {
+		reverse_proxy project-api:8000
+	}
+
+	@stac path /stac/*
+	handle_path @stac {
+		reverse_proxy stac-api:8080
+	}
+
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
+}

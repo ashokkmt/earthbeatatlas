@@ -1,5 +1,6 @@
 import unittest
 import tempfile
+from unittest.mock import patch
 from pathlib import Path
 from types import SimpleNamespace
 from fastapi.testclient import TestClient
@@ -63,6 +64,27 @@ class ProductProcessingTests(unittest.TestCase):
         paths = app.openapi()["paths"]
         self.assertNotIn("/auth/earthdata/login", paths)
         self.assertIn("/api/v1/products", paths)
+
+    def test_processing_routes_are_off_unless_explicitly_enabled(self):
+        payload = {"product_id": "nisar-gunw", "region_id": "Colusa", "granule_id": "G123-ASF",
+                   "parameters": ["coherence"]}
+        with patch.dict("os.environ", {"ENABLE_PROCESSING_JOBS": "false"}):
+            response = TestClient(app).post("/api/v1/jobs", json=payload)
+        self.assertEqual(response.status_code, 404)
+
+    def test_public_tile_proxy_accepts_only_content_addressed_project_assets(self):
+        client = TestClient(app)
+        with patch.dict("os.environ", {"S3_BUCKET": "nisar-assets"}):
+            blocked = client.get("/api/v1/tiles/cog/tiles/WebMercatorQuad/0/0/0.png",
+                                 params={"url": "http://169.254.169.254/latest/meta-data/"})
+            self.assertEqual(blocked.status_code, 400)
+            with patch("nasa_explorer.api.main.httpx.get") as request:
+                request.return_value = __import__("httpx").Response(200, content=b"png", headers={"content-type": "image/png"})
+                asset = "s3://nisar-assets/sha256/ab/" + "a" * 64 + ".tif"
+                response = client.get("/api/v1/tiles/cog/tiles/WebMercatorQuad/0/0/0.png", params={"url": asset})
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.content, b"png")
+        self.assertTrue(request.called)
 
     def test_case_endpoint_exposes_only_packaged_configured_context_assets(self):
         client = TestClient(app)

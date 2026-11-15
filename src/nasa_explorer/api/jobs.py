@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import os
 import re
 import uuid
 
@@ -13,6 +14,11 @@ from nasa_explorer.db import connect
 from nasa_explorer.processing.harmony import harmony_request
 
 router = APIRouter(prefix="/api/v1/jobs", tags=["processing-jobs"])
+
+
+def _require_enabled():
+    if os.environ.get("ENABLE_PROCESSING_JOBS", "false").lower() != "true":
+        raise HTTPException(404, "Processing is not enabled")
 
 
 class JobRequest(BaseModel):
@@ -84,6 +90,7 @@ def _owned(job_id: str, key: str | None):
 
 @router.post("", status_code=202)
 def submit(body: JobRequest, idempotency_key: str | None = Header(default=None, alias="Idempotency-Key")):
+    _require_enabled()
     record, created = enqueue(body, idempotency_key)
     record.pop("request_sha256", None)
     record["created"] = created
@@ -92,11 +99,13 @@ def submit(body: JobRequest, idempotency_key: str | None = Header(default=None, 
 
 @router.get("/{job_id}")
 def status(job_id: str, idempotency_key: str | None = Header(default=None, alias="Idempotency-Key")):
+    _require_enabled()
     return _owned(job_id, idempotency_key)
 
 
 @router.post("/{job_id}/cancel")
 def cancel(job_id: str, idempotency_key: str | None = Header(default=None, alias="Idempotency-Key")):
+    _require_enabled()
     owner = _key_digest(idempotency_key)
     with connect() as conn:
         row = conn.execute(

@@ -1,5 +1,10 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse, JSONResponse
+import os
+import re
+
+import httpx
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse, JSONResponse, Response
 from pathlib import Path
 
 from nasa_explorer.catalog.registry import load_regions
@@ -9,6 +14,10 @@ from nasa_explorer.api.jobs import router as jobs_router
 
 app = FastAPI(title="NISAR Explorer Project API", version="0.1.0")
 app.include_router(jobs_router)
+origins = [value.strip() for value in os.environ.get("CORS_ORIGINS", "").split(",") if value.strip()]
+if origins:
+    app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST"],
+                       allow_headers=["Content-Type", "Idempotency-Key"])
 
 
 @app.get("/healthz")
@@ -19,6 +28,25 @@ def health():
     except Exception:
         return JSONResponse(status_code=503, content={"status": "unavailable", "database": "unavailable"})
     return {"status": "ok"}
+
+
+@app.get("/api/v1/tiles/{path:path}")
+def tiles(path: str, request: Request):
+    """Proxy only prepared objects from this project's content-addressed S3 bucket."""
+    bucket = os.environ.get("S3_BUCKET", "")
+    asset = request.query_params.get("url", "")
+    if not bucket or not (path.startswith("cog/tiles/") or path.startswith("cog/point/")):
+        raise HTTPException(404, "Tile route unavailable")
+    if not re.fullmatch(rf"s3://{re.escape(bucket)}/sha256/[0-9a-f]{{2}}/[0-9a-f]{{64}}\.tiff?", asset):
+        raise HTTPException(400, "Only prepared assets in the configured bucket can be read")
+    upstream = os.environ.get("TITILER_INTERNAL_URL", "http://127.0.0.1:8001").rstrip("/")
+    try:
+        response = httpx.get(f"{upstream}/{path}", params=request.query_params, timeout=60)
+    except httpx.HTTPError as error:
+        raise HTTPException(502, "Raster tile service is unavailable") from error
+    return Response(content=response.content, status_code=response.status_code,
+                    media_type=response.headers.get("content-type"),
+                    headers={key: response.headers[key] for key in ("cache-control", "etag") if key in response.headers})
 
 
 @app.get("/api/v1/cases")

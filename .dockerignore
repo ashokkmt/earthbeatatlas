@@ -2,10 +2,10 @@
 .venv
 __pycache__
 *.py[cod]
-graphify-out
-plans
-WORKLOG.md
-tests
+web/node_modules
+web/dist
+web/.vite
+data/cache
 data/*
 !data/seeds/
 !data/seeds/**
@@ -18,3 +18,10 @@ data/*
 !data/releases/nisar-pilot-20261114-v1/barataria/barataria-nwi-forested-shrub.geojson
 !data/releases/nisar-pilot-20261114-v1/colusa/
 !data/releases/nisar-pilot-20261114-v1/colusa/cdl-2025-rice.png
+graphify-out
+plans
+WORKLOG.md
+.env
+.env.*
+!.env.example
+tests
